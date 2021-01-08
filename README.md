@@ -63,24 +63,50 @@ We will also use Mimir as an online development and automatic grading platform. 
 
 ### Approximate Weekly Schedule of Topics
 
-| Week | Topics  |  Assignments |
+| Day | Topic  |  Assignments |
 |------|---------|-------------|
-| 1  | Intro to Python, printing, arithmetic  | Problem set 1 |
-| 2  | Variables and assignments | Problem set 2 |
-| 3  | Conditional execution and boolean logic | Problem set 3|
-| 4  | Intro to functions | 
-| 5  | More functions | Problem set 4 |
-| 6  | The `for` loop  | Problem set 5 and major project 1 |
-| 7  | The `while` loop | Problem set 6 |
-| 8  | Strings and file I/O | Problem set 7 |
-| 9  | Lists | Problem set 8 and challenge project 1 |
-| 10  | Dictionaries | Major project 2 |
-| 11  | Intro to objects and classes |
-| 12  | More objects and classes | Challenge project 2 |
-| 13  | Graphics programming |
-| 14  | Programming for the web |
-| 15  | More web programming | Final project |
-| 16  | Even more web programming |
+|January 20|    Hello, World! | |
+|January 21|    Lab 1: Doing things on Mimir||
+|January 25|    Calculations and variables||
+|January 27|    Reading user input||
+|January 28|    Lab 2: Practice problems||
+|February 1|    Making comparisons||
+|February 3|    The if statement||
+|February 4|    Lab 3: Human-Computer Interaction and Fitts' Law||
+|February 8|    Adding randomness to your programs||
+|February 10|   Writing simple games||
+|February 11|   Lab 4: RPS||
+|February 15|   Intro to lists||
+|February 17|   Using lists to represent data sets||
+|February 18|   Lab 5:  Data analysis practice problems||
+|February 22|   Intro to functions||
+|February 24|   Function practice||
+|February 25|   Lab 6: Choose Your Own Adventure||
+|March 1|       Writing even more functions||
+|March 3|       Local variables and scope||
+|March 4|       Lab 7: Network Performance Measurement||
+|March 8|       Return to the for loop||
+|March 10|      for loops part II||
+|March 11|      Lab 8: Simulation||
+|March 15|      The while loop||
+|March 17|      while loops part II||
+|March 18|      Lab 9: Precision and Number Formats||
+|March 22|      Working with strings||
+|March 24|      Gaiden: numbers and data representation||
+|March 25|      Lab 10: Monte Carlo Word Estimation||
+|March 29|      Lists||
+|March 31|      Using lists for data analysis||
+|April 1|       Lab 11: Intro to Pandas||
+|April 5|       Dictionaries||
+|April 7|       Letter frequencies and code cracking||
+|April 8|       Lab 12: More Pandas||
+|April 12|      Intro to OOP||
+|April 14|      Writing classes that have data||
+|April 15|      Lab 13: Pandas 3||
+|April 19|      Writing classes that have methods||
+|April 21|      More class writing practice||
+|April 22|      Lab 14: The Final Lab||
+|April 26|      THE END||
 
 
 ### Other Important Dates
