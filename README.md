@@ -61,52 +61,52 @@ We will also use Mimir as an online development and automatic grading platform. 
 
 ## Schedule
 
-### Approximate Weekly Schedule of Topics
+### Planned Schedule of Topics
 
 | Day | Topic  |  Assignments |
 |------|---------|-------------|
 |January 20|    Hello, World! | |
 |January 21|    Lab 1: Doing things on Mimir||
-|January 25|    Calculations and variables||
-|January 27|    Reading user input||
-|January 28|    Lab 2: Practice problems||
+|January 25|    Calculations and variables|  |
+|January 27|    Reading user input| Assignment 1 due|
+|January 28|    Lab 2: Practice problems| |
 |February 1|    Making comparisons||
-|February 3|    The if statement||
-|February 4|    Lab 3: Human-Computer Interaction and Fitts' Law||
+|February 3|    The `if` statement| Assignment 2 due |
+|February 4|    Lab 3: Human-Computer Interaction and Fitts' Law| Required lab |
 |February 8|    Adding randomness to your programs||
 |February 10|   Writing simple games||
 |February 11|   Lab 4: RPS||
-|February 15|   Intro to lists||
-|February 17|   Using lists to represent data sets||
-|February 18|   Lab 5:  Data analysis practice problems||
-|February 22|   Intro to functions||
-|February 24|   Function practice||
-|February 25|   Lab 6: Choose Your Own Adventure||
-|March 1|       Writing even more functions||
-|March 3|       Local variables and scope||
-|March 4|       Lab 7: Network Performance Measurement||
-|March 8|       Return to the for loop||
-|March 10|      for loops part II||
+|February 15|   Intro to functions||
+|February 17|   Writing functions| Assignment 3 due |
+|February 18|   Lab 5: Choose Your Own Adventure||
+|February 22|       Writing even more functions||
+|February 24|       Local variables and scope||
+|February 25|       Lab 6: Network Performance Measurement| Required lab|
+|March 1|       Lists||
+|March 3|       Using lists for data analysis| Assignment 4 due |
+|March 4|       Lab 7: My Heart Will Go On||
+|March 8|       Return to the `for` loop||
+|March 10|      `for` loops part II||
 |March 11|      Lab 8: Simulation||
-|March 15|      The while loop||
-|March 17|      while loops part II||
-|March 18|      Lab 9: Precision and Number Formats||
+|March 15|      The `while` loop||
+|March 17|      `while` loops part II| Assignment 5 due |
+|March 18|      Lab 9: Precision and Number Formats| Required lab |
 |March 22|      Working with strings||
-|March 24|      Gaiden: numbers and data representation||
+|March 24|      Numbers and data representation||
 |March 25|      Lab 10: Monte Carlo Word Estimation||
-|March 29|      Lists||
-|March 31|      Using lists for data analysis||
-|April 1|       Lab 11: Intro to Pandas||
-|April 5|       Dictionaries||
-|April 7|       Letter frequencies and code cracking||
+|March 29|      Dictionaries||
+|March 31|      Letter frequencies and code cracking| Assignment 6 due |
+|April 1|       Lab 11: Intro to Pandas| |
+|April 5|       Intro to classes and objects||
+|April 7|       Writing classes that have data||
 |April 8|       Lab 12: More Pandas||
-|April 12|      Intro to OOP||
-|April 14|      Writing classes that have data||
+|April 12|      Writing classes that have methods||
+|April 14|      Class writing practice| Assignment 7 due |
 |April 15|      Lab 13: Pandas 3||
-|April 19|      Writing classes that have methods||
-|April 21|      More class writing practice||
-|April 22|      Lab 14: The Final Lab||
-|April 26|      THE END||
+|April 19|      Topic||
+|April 21|      Topic| |
+|April 22|      Lab: Work on projects ||
+|April 26|      Final day of class | All challenge projects are due |
 
 
 ### Other Important Dates
