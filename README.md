@@ -93,16 +93,16 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 18|      Lab 9: Precision and Number Formats| Required lab |
 |March 22|      Working with strings||
 |March 24|      Numbers and data representation|Quiz 4|
-|March 25|      Lab 10: Monte Carlo Word Estimation||
+|March 25|      Lab 10: Monte Carlo Word Estimation| Required lab|
 |March 29|      Dictionaries||
 |March 31|      Letter frequencies and code cracking| Assignment 6 due |
 |April 1|       Lab 11: Intro to Pandas| |
 |April 5|       Intro to classes and objects||
 |April 7|       Writing classes that have data|Quiz 5|
-|April 8|       Lab 12: More Pandas||
+|April 8|       Lab 12: More Pandas|Required lab|
 |April 12|      Writing classes that have methods||
 |April 14|      Class writing practice| Assignment 7 due |
-|April 15|      Lab 13: Pandas 3||
+|April 15|      Lab 13: Pandas 3|Required lab|
 |April 19|      Topic||
 |April 21|      Topic|Quiz 6|
 |April 22|      Lab: Work on projects ||
