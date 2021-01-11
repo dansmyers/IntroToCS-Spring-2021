@@ -127,33 +127,33 @@ Rather than calculating your score as number of points on a 0-100 scale, your gr
 If you achieve satisfactory performance on enough assigments, described in more detail below, you'll receive a baseline grade of **B** for the course. This demonstrates that you have engaged with the material and met the basic learning outcomes for the class. To get a higher grade, you can do more work that shows greater mastery of the course learning outcomes.
 
 ### Labs
-You must be registered for a section of CMS 120L. You'll receive the **same grade** for both CMS 167 and CMS 167L.
+You must be registered for a section of CMS 120L. You'll receive the **same grade** for both CMS 120 and CMS 120L.
 
-### Assignments and Scoring
-Your core grade will be based on five things:
+### Assignments
+We'll have five kinds of assignments in this class:
 
-1. A set of autograded programming assignments. Each assigned homework problem will have one or more tests, which the Mimir system can automatically check against your solution code. Passing the test gives you credit for completing that problem. You can attempt each problem as many times as you want and the problems will remain open from the time they are posted until the day of the final exam, so you have the opportunity to revisit and complete problems that may have been too challenging when they were first assigned.
-2. Three major projects, one before the midterm, one in the middle of the second half, and one at the end of the course.
-3. A written take-home midterm exam.
-4. A written final exam.
-5. Six written lab reports.
+1. A set of **seven autograded programming assignments**. These will be done on the Mimir platform, and you'll have one due approximately every two weeks. Each assignment consists of questions that will require you to write short Python programs, accompanied by tests that automatically evaluate your code.
 
-I will grade most of the items you turn in on a two-level scale: your work will be either **satisfactory** or receive **no credit**. 
-A "satisfactory" assignment corresponds to a B-level performance, which is **a higher standard** than we often associate with that term. It means that the work is:
+2. **Six short quizzes** that will be taken **in class** on the days specified on the calendar.
+
+3. A set of **six required labs** that will be done in class on the days specified on the calendar. These labs emphasize data collection and scientific reasoning and are required for this class to count for the RFLA Science requirement. The other lab periods will be used for extra practice and working on the problem sets.
+
+4. A **final project**, which will be your chance to choose and implement any program that you want using the features we've studied in the course.
+
+5. **Challenge projects**, which are optional extra credit and can be used to raise your grade.
+
+
+### Scoring
+
+I will grade most of the items you turn in on a two-level scale: your work will be either **satisfactory** or receive **no credit**. "Satisfactory" means that the work is:
 
 1. Substantially complete and correct (there may be a few issues, but only minor ones).
 2. Shows real understanding and application of the course material.
 3. Completed on time in the required format.
 
-For any autograded problems, passing the test will indicate that your code is satisfactory.
 
-I'll grade the exam problems on a scale from 0 to 2:
 
-0. No answer, or too incomplete to grade.
-1. Shows effort, but has serious issues.
-2. Satisfactory.
 
-You will receive satisfactory credit on an exam if you receive 80% of the total possible points.
 
 ### Final Letter Grades
 
