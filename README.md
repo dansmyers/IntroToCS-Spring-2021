@@ -143,7 +143,7 @@ We'll have five kinds of assignments in this class:
 5. **Challenge projects**, which are optional extra credit and can be used to raise your grade.
 
 
-### Scoring
+### Satisfactory Credit
 
 I will grade most of the items you turn in on a two-level scale: your work will be either **satisfactory** or receive **no credit**. "Satisfactory" means that the work is:
 
@@ -151,45 +151,44 @@ I will grade most of the items you turn in on a two-level scale: your work will 
 2. Shows real understanding and application of the course material.
 3. Completed on time in the required format.
 
+### The Giant Pile of Points
 
+Each homework assignment and quiz will consist of a number of questions, with the typical assignment having about five questions and each quiz having four. Your final letter grade will be based on the total number of **questions** that you answer over the course of the semester.
 
+For each question on the programming assignments, **you'll receive credit if your code passes all of the autograded tests** for that question.
+
+For the quizzes, I will award you credit for each question based on the "substantially complete and correct" standard described above.
+
+Therefore, at the end of the semester, you'll have accumulated a number of points based on your overall performance on all of the quizzes and programming assignments. There will be **approximately** 60 points from homework and quiz questions allocated during the semester.
+
+Note that there is **no partial credit**: You will always receive either **full credit** for a satisfactory answer to a question or **no credit**.
 
 
 ### Final Letter Grades
 
-**To earn a B**, you must meet the following five criteria:
+**To earn a B**, you must meet the following criteria:
 
-1. Pass 90% of all autograded tests given for homework problems during the semester. This is a cumluative score that will be calculated over **all indvidual tests**, so you are not required to answer, or even attempt, every test for every problem.
-2. Satisfactory completion of all three major projects.
-3. Satisfactory completion of the midterm exam.
-4. Satisfactory completion of the final exam.
-5. Satisfactory completion of six written lab reports
+1. Earn at least 90% of the total points from homework and quiz questions over the course of the semester.
+
+2. Complete a satsifactory final programming project.
+
+3. Complete all six of the required laboratory assignments.
 
 **If you fail to complete the requirements for a B**, your grade will be adjusted downwards according to the following table:
 
-| For unsatisfactory performance on              | Your grade will be adjusted downwards by |
+| For               | Your grade will be adjusted downwards by |
 |------------------------------------------------|------------------------------------------|
-| Completing less than 90% of autograded tests | Fraction of a letter grade (e.g. B to B-)       |
-| Completing less than 80%, 70%, etc. of autograded tests | Fraction of a letter grade for each 10%       |
-| One major project                           | Fraction of a letter grade                      |
-| Additional major projects                   | A full letter grade                      |
-| The midterm exam                                |  	A fraction of a letter grade (score of 50% - 79%) or a full letter grade (score of less than 50%)                   |
-| The final exam                                 | 	A fraction of a letter grade (score of 50% - 79%) or a full letter grade (score of less than 50%)                    |
+| Earning less than 90% of the total homework and quiz question points | Fraction of a letter grade (e.g. B to B-)       |
+| Earning less than 85%, 80%, etc. of the total homework | Fraction of a letter grade for each 5%       |                   
 | Each incomplete lab report | Fraction of a letter grade |
-| Failure to submit an assignment                | Double the regular penalty for an unsatisfactory submission |
+| Unsatisfactory final project               | A full letter grade (e.g. B to C) |
 
-These penalties are cumulative. For example, if you failed to satisfactorily complete two major projects, your base grade would be lowered by 1.5 letters, from B to C-.
+These penalties are cumulative. For example, if you failed to satisfactorily complete two lab reports, your base grade would be lowered by two fractions of a letter, from B to C+.
 
-**To earn a higher grade**, you can complete additional work that shows deeper engagement with the course goals.
+**To earn a higher grade**, you can complete additional **challenge projects** that show deeper engagement with the course material. There will be at least **three challenge
+projects** and all of the projects are due on the final day of class. Satisfactory completion of a challenge project will raise your grade by **a fraction of a letter**, e.g. B to B+.
 
-| For successfully completing                         | Your grade will be adjusted upwards by   |
-|-----------------------------------------------------|------------------------------------------|
-| A challenge programming assignment (there will be at least two) | Half a letter grade                      |
-| An in-depth reflective writing assignment           | Half a letter grade                      |
-| Tutorial blog post on a Python feature or interesting problem          | Half a letter grade                      |
-
-If your grade drops, you can still complete extra work to boost it up. For example, you could struggle with one project, but
-complete the reflective writing assignment. The two would cancel each other out and your grade would remain a B.
+**To earn an A**, you need to complete the requirements for a B plus all three challenge projects.
 
 ### Why Are You Doing This To Us?
 
@@ -197,31 +196,39 @@ complete the reflective writing assignment. The two would cancel each other out 
 
 2. Your grade is directly tied to the learning that you demonstrate. The satisfactory work sets a baseline, but to earn a higher grade, you must demonstrate a higher level of engagement with the course material.
 
-3. It gives you choices for how to attain higher grades. You can boost your grade by completing individual programming assignments, superior team-based projects, or an in-depth reflection.
+3. It's relatively easy to get a B if you do the required work, but hard to get an A. This preserves the integrity of the course, while still making it possible for everyone to succeed.
 
-4. It's relatively easy to get a B if you do the required work, but hard to get an A. This preserves the integrity of the course, while still making it possible for everyone to succeed.
+4. If you only need a B or a C, you can adjust your effort accordingly: the standards are transparent. You don't have to spend time on the most difficult assignments if you don't need them to get the result you want.
 
-5. If you only need a B or a C, you can adjust your effort accordingly: the standards are transparent. You don't have to spend time on the most difficult assignments if you don't need them to get the result you want.
+5. It reflects how you'll be evaluated in your career. Work assignments aren't graded out of 100% and your boss won't give partial credit for incomplete work. So, basically, I'm setting you up for massive career success.
 
-6. It reflects how you'll be evaluated in your career. Work assignments aren't graded out of 100% and your boss won't give partial credit for incomplete work. So, basically, I'm setting you up for massive career success.
+### I Feel Decidedly Uncomfortable
 
-### What About My Partial Credit?
+This is probably a new approach to grading for you. In particular, students new to specs grading often have anxiety about the lack of partial credit in the system.
 
-You may feel uncomfortable about the two-level grading scale. This will pass.
+Here are a few things to keep in mind:
 
-1. Two-level grading is faster, so I will be able to return work more quickly and put more effort into giving you meaningful feedback.
+1. **You don't have to be perfect**. The "substantially complete and correct" standard allows for imperfections in your answers and you only need 90% of the available question points over the semester, so you don't have to correctly answer, or even attempt, every programming problem or quiz question.
 
-2. Two-level grading is more consistent. It's easier to sort work into two bins, rather than slicing it into 100 possible points.
+2. **You do need to be consistent**. The system rewards you for putting forward good, consistent effort. Working diligently and carefully will allow you to accumulate all of the points that you need for a B.
 
-3. Each project will have a spec that clearly explains the requirements for satisfactory work. You can also ask me for an evaluation of your work-in-progress.
+3. **You will get lots of feedback**. The autograded tests will tell you, unambiguously, whether your answers for a programming question are correct or not. The standards for the final project will likewise be transparent.
 
-4. Again, industry doesn't give partial credit. If you're asked to code a feature or prepare a presentation, you ultimately either perform at a satisfactory level or you don't.
+4. **Some work will be done in class**. Completing the six required labs is easy if you attend class during the lab periods.
 
-5. There are at least four ways to increase your grade. You only need three of them to move from the satisfactory B to an A.
+5. **You have extra credit options**. One of the challenge projects will be a short reflective writing assignment that won't be difficult to complete.
 
-## Course Policies
+## COVID Policies
 
-**Attendance** The only way to be consistently successful in your academic career is to regularly attend class meetings and participate in in-class activities. Therefore, while I do not mandate attendance at every single class, I expect full attendance every time we meet.
+The College's COVID-19 prevention policies will apply to all of our class meetings. We'll wear masks and sit in assigned seats for the duration of the semester.
+
+If you are registered to attend the class in-person, **you must attend in-person**. Excepting cases of illness or quarantine, **in-person students may not unoffically switch to virtual attendance** and may not choose how to attend on a day-by-day basis.
+
+If you are registered to attend in-person and need to switch permanently to virtual attendance, there will be a procedure for you to make an official transition.
+
+## Other Course Policies
+
+**Attendance** The only way to be consistently successful in your academic career is to regularly attend class meetings and participate in in-class activities. Therefore, while I do not mandate attendance at every single class, I expect full attendance every time we meet. **Don't attend class if you're sick**.
 
 **Laptops** If you have a laptop, please bring it to class.
 
@@ -254,6 +261,8 @@ Material submitted electronically should contain the pledge; submission implies 
 
 ## How Do I Interpret the Honor Code?
 In the context of this class, my interpretation of the Honor Code pledge is that the work you submit for every assignment shall be your own original creation. This means that any item you submit must be written by you and you alone, or in an assigned group project by your group alone. Copying a complete solution from fellow class members, previous class members, books, or the Internet is a violation of this policy and will constitute academic misconduct.
+
+It is acceptable to discuss questions and solutions in general terms with other class members, but your discussions should not be at a level of detail that would lead to you submitting the same work as a another student.
 
 ## Official Syllabus Statements
 
