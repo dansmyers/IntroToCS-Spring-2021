@@ -87,7 +87,7 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 4|       Lab 7: My Heart Will Go On||
 |March 8|       Return to the `for` loop||
 |March 10|      `for` loops part II|Quiz 3|
-|March 11|      Lab 8: Simulation||
+|March 11|      Off ||
 |March 15|      The `while` loop||
 |March 17|      `while` loops part II| Assignment 5 due |
 |March 18|      Lab 9: Precision and Number Formats| Required lab |
@@ -103,8 +103,8 @@ We will also use Mimir as an online development and automatic grading platform. 
 |April 12|      Writing classes that have methods||
 |April 14|      Class writing practice| Assignment 7 due |
 |April 15|      Lab 13: Pandas 3|Required lab|
-|April 19|      Topic||
-|April 21|      Topic|Quiz 6|
+|April 19|      Flex for Fox Day ||
+|April 21|      Topic |Quiz 6|
 |April 22|      Lab: Work on projects ||
 |April 26|      Final day of class | All challenge projects are due |
 
@@ -116,6 +116,7 @@ We will also use Mimir as an online development and automatic grading platform. 
 - Break days: February 19 and March 16
 - Last day to drop the class: February 2
 - Last day to withdraw without penalty: April 2
+- Fox Day will probably be in the first part of April. Everything in April is designed to be flexible, so we can take a day off and adjust the schedule if we need to.
 
 ## The All-Important Grading Section
 
@@ -142,6 +143,7 @@ We'll have five kinds of assignments in this class:
 
 5. **Challenge projects**, which are optional extra credit and can be used to raise your grade.
 
+There are **no exams** in this class.
 
 ### Satisfactory Credit
 
@@ -153,7 +155,7 @@ I will grade most of the items you turn in on a two-level scale: your work will 
 
 ### The Giant Pile of Points
 
-Each homework assignment and quiz will consist of a number of questions, with the typical assignment having about five questions and each quiz having four. Your final letter grade will be based on the total number of **questions** that you answer over the course of the semester.
+Each homework assignment and quiz will consist of a number of questions, with the typical assignment having about five questions and each quiz having four. Your final letter grade will be based on the total number of **questions** that you answer correctly over the course of the semester.
 
 For each question on the programming assignments, **you'll receive credit if your code passes all of the autograded tests** for that question.
 
@@ -172,7 +174,7 @@ Note that there is **no partial credit**: You will always receive either **full 
 
 2. Complete a satsifactory final programming project.
 
-3. Complete all six of the required laboratory assignments.
+3. Complete all six of the required laboratory reports.
 
 **If you fail to complete the requirements for a B**, your grade will be adjusted downwards according to the following table:
 
@@ -184,6 +186,8 @@ Note that there is **no partial credit**: You will always receive either **full 
 | Unsatisfactory final project               | A full letter grade (e.g. B to C) |
 
 These penalties are cumulative. For example, if you failed to satisfactorily complete two lab reports, your base grade would be lowered by two fractions of a letter, from B to C+.
+
+### Challenge Projects
 
 **To earn a higher grade**, you can complete additional **challenge projects** that show deeper engagement with the course material. There will be at least **three challenge
 projects** and all of the projects are due on the final day of class. Satisfactory completion of a challenge project will raise your grade by **a fraction of a letter**, e.g. B to B+.
@@ -212,7 +216,7 @@ Here are a few things to keep in mind:
 
 2. **You do need to be consistent**. The system rewards you for putting forward good, consistent effort. Working diligently and carefully will allow you to accumulate all of the points that you need for a B.
 
-3. **You will get lots of feedback**. The autograded tests will tell you, unambiguously, whether your answers for a programming question are correct or not. The standards for the final project will likewise be transparent.
+3. **You will get lots of feedback**. The autograded tests will tell you, unambiguously, whether your answers for a programming question are correct or not. The standards for the final project and the lab reports will likewise be transparent.
 
 4. **Some work will be done in class**. Completing the six required labs is easy if you attend class during the lab periods.
 
@@ -222,9 +226,7 @@ Here are a few things to keep in mind:
 
 The College's COVID-19 prevention policies will apply to all of our class meetings. We'll wear masks and sit in assigned seats for the duration of the semester.
 
-If you are registered to attend the class in-person, **you must attend in-person**. Excepting cases of illness or quarantine, **in-person students may not unoffically switch to virtual attendance** and may not choose how to attend on a day-by-day basis.
-
-If you are registered to attend in-person and need to switch permanently to virtual attendance, there will be a procedure for you to make an official transition.
+If you are registered to attend the class in-person, **you must attend in-person**. Excepting cases of illness or quarantine, **in-person students may not unoffically switch to virtual attendance** and may not choose how to attend on a day-by-day basis. If you are registered to attend in-person and need to switch permanently to virtual attendance, there will be a procedure for you to make an official transition.
 
 ## Other Course Policies
 
