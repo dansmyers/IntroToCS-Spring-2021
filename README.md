@@ -48,9 +48,9 @@ This class has a co-requisite of CMS 195L Introduction to Computer Science Lab.
 
 We'll complete a total of **six** hypothesis-based lab activities during the semester; the other lab periods are available to practice programming and work on assignments. 
 
-CMS 195 may substitute for the required **rFLA 200-level Science class**, which reduces the number of 200-level classes you need to complete to satisfy your rFLA requirements. I'll talk about how to do this later in the semester.
+Together, CMS 120 and 120L may substitute for the required **rFLA 200-level Science class**, which reduces the number of 200-level classes you need to complete to satisfy your rFLA requirements. I'll talk about how to do this later in the semester.
 
-CMS 195 and the lab are listed as separate sections but you'll receive the **same grade** for both. Completing the six required labs is one component of your final grade, discussed below.
+CMS 120 and the lab are listed as separate sections but you'll receive the **same grade** for both. Completing the six required labs is one component of your final grade, discussed below.
 
 ## Textbook
 
@@ -87,12 +87,12 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 4|       Lab 7: My Heart Will Go On||
 |March 8|       Return to the `for` loop||
 |March 10|      `for` loops part II|Quiz 3|
-|March 11|      Off ||
+|March 11|      Lab 8: Extra day off (no class) ||
 |March 15|      The `while` loop||
 |March 17|      `while` loops part II| Assignment 5 due |
 |March 18|      Lab 9: Precision and Number Formats| Required lab |
 |March 22|      Working with strings||
-|March 24|      Numbers and data representation|Quiz 4|
+|March 24|      Numbers and data representation |Quiz 4|
 |March 25|      Lab 10: Monte Carlo Word Estimation| Required lab|
 |March 29|      Dictionaries||
 |March 31|      Letter frequencies and code cracking| Assignment 6 due |
