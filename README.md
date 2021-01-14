@@ -17,6 +17,10 @@ Office hours for Spring 2021:
 - Wednesdays 4:15 to 5:15
 - Fridays 2:00 to 3:00
 
+## WebEx Room
+
+rollins.webex.com/meet/dmyers
+
 ## Official Course Description
 
 **CMS 120 Introduction to Computer Science**. Introduction to fundamental aspects of programming using a high-level language, focusing on problem solving, software design concepts, and their realization as computer programs. Topics include: variables, using existing classes, selection and iteration, and arrays. Classroom activities are used to gain mastery of these principles. Co-requisite: CMS 195L
