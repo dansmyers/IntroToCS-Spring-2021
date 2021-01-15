@@ -10,13 +10,16 @@ dmyers@rollins.edu
 407-646-2151
 
 ## Office Hours
-Office hours for Spring 2021:
+To better manage student interactions during the pandemic, I'm not planning to hold regular in-person office hours during the fall semester. While I'm on campus, my office will be the primary space where I can work without a mask, record videos, eat, etc. Therefore, I think it's wise to limit the number of students coming in and out of my office each day, at least at the beginning of the semester while we're all adjusting to new patterns of working and interacting.
 
-- Mondays 10:00 to 11:00
-- Tuesdays 2:00 to 3:00
-- Wednesdays 4:15 to 5:15
-- Fridays 2:00 to 3:00
+Most informal class-related questions will be handled over Slack. I'll send out details for how to join our class workspace in the first week of the semester. I will also handle most casual advising questions over Slack.
 
+If you'd like to chat in person, we can talk (in a socially-distanced way) at the beginning or end of class. You can also make an appointment to chat via WebEx if you have questions that are too in-depth to handle over Slack.
+
+I will plan to be generally available for WebEx appointments on
+
+- Mondays and Wednesdays from 10:00 to 11:00
+- Tuesdays and Thursdays from 2:00 to 3:00
 ## WebEx Room
 
 rollins.webex.com/meet/dmyers
