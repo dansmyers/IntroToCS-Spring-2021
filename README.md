@@ -187,8 +187,8 @@ Note that there is **no partial credit**: You will always receive either **full 
 
 | For               | Your grade will be adjusted downwards by |
 |------------------------------------------------|------------------------------------------|
-| Earning less than 90% of the total homework and quiz question points | Fraction of a letter grade (e.g. B to B-)       |
-| Earning less than 85%, 80%, etc. of the total homework | Fraction of a letter grade for each 5%       |                   
+| Earning credit for less than 90% of the total homework and quiz question points | Fraction of a letter grade (e.g. B to B-)       |
+| Earning credit for less than 85%, 80%, etc. of the total homework and quiz points| Fraction of a letter grade for each 5%       |                   
 | Each incomplete lab report | Fraction of a letter grade |
 | Unsatisfactory final project               | A full letter grade (e.g. B to C) |
 
