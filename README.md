@@ -51,7 +51,7 @@ programming problems.
 
 ## Labs
 
-This class has a co-requisite of CMS 195L Introduction to Computer Science Lab.
+This class has a co-requisite of CMS 120L Introduction to Computer Science Lab.
 
 We'll complete a total of **six** hypothesis-based lab activities during the semester; the other lab periods are available to practice programming and work on assignments. 
 
