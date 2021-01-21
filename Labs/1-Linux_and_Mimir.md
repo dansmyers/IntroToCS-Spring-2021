@@ -287,7 +287,7 @@ The world's largest swimming pool is at the San Alfonso del Mar resort in Chile.
 <img src="https://twistedsifter.files.wordpress.com/2012/05/san-alfonso-del-mar-aerial-satellite-from-above-algarrobo-chile-5.jpg" width="50%" />
 
 A **firkin** is an old unit sometimes used to measure beer and ale in Britain. The British Imperial beer firkin is defined to be equal to 10.8 US gallons. 
-Suppose we wanted to fill the San Alfonso del Mar pool with beer, because **reasons**. How many firkins of beer would be required to accomplish this feat?
+Suppose we wanted to fill the San Alfonso del Mar pool with beer, ***because reasons***. How many firkins of beer would be required to accomplish this feat?
 Write a program to calculate and print the answer.
 
 Tips:
