@@ -270,7 +270,16 @@ as "McChocolate Potatoes"). Are they any good? Maybe not, but they cost only 330
 
 What is the cost of a side of chocolate fries in dollars?
 
-Note: you only need to write one line that uses a `print` statement to display the result of the calculation.
+Note: 
+
+- Create a new file named `fries.py` to hold your program.
+
+```
+> touch fries.py
+> open fries.py
+```
+
+- You only need to write one line that uses a `print` statement to display the result of the calculation.
 
 ```
 # Cost of a side of chocolate fries in dollars
@@ -291,6 +300,8 @@ Suppose we wanted to fill the San Alfonso del Mar pool with beer, ***because rea
 Write a program to calculate and print the answer.
 
 Tips:
+
+- Put your solution in a file named `pool.py`
 
 - To enter 66 million into a program, use `66000000`. Python doesn't want commas in large numbers.
 
@@ -313,3 +324,12 @@ What is the length of the Lake Pontchartrain Causeway in Smoots?
 Tip: one Smoot is about 5.5833 feet and there are 5280 feet in a mile.
 
 
+## One More Thing...
+Telnet is a program for establishing a remote connection to another server.
+
+```
+sudo apt-get install telnet
+telnet towel.blinkenlights.nl
+```
+
+Close the terminal window to quit.
