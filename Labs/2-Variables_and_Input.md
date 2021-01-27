@@ -81,9 +81,7 @@ and see what results you get:
 2 % 2
 ```
 
-Can you figure out what the mod operator does?
-
-Hint: it has something to do with division.
+Can you figure out what the mod operator does? Hint: it has something to do with division.
 
 Press `CTRL + d` to exit the Python prompt and return to your regular terminal.
 
