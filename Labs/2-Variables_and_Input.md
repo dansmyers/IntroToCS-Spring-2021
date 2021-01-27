@@ -68,3 +68,40 @@ weightlifter / human vending machine [Hossein Rezazadeh](https://www.youtube.com
 Use your program to calculate the weight of Rezazadeh's record lift in pounds.
 
 
+## Mystery Operator
+
+Python supports a special operator, `%`, which is called the **modulus operator**.
+
+Run the Python prompt in your terminal by typing `python3` and pressing `ENTER`. Try some calculations using the modulus operator
+and see what results you get:
+
+```
+7 % 3
+12 % 5
+19 % 7
+2 % 2
+```
+
+Can you figure out what the mod operator does?
+
+Hint: it has something to do with division.
+
+Press `CTRL + d` to exit the Python prompt and return to your regular terminal.
+
+
+## Number Fail
+
+Recall that all of the data in our Python programs must ultimately be stored on a real, physical computer. This implies that there must be **limitations** for the range and precision of values that can be represented in code.
+
+Run the `python3` prompt again and output the following calculation. Do you get the right answer?
+
+```
+.1 + .2
+```
+
+What do you see?
+
+This is an example of **numerical error**: floating point numbers (the `float` type) can only represent some numbers approximately so 
+calculations involving fractions may have very small errors.
+
+Find another example using `float` arithmetic that doesn't give the exact result you would expect.
