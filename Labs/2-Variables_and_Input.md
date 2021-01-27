@@ -100,3 +100,17 @@ This is an example of **numerical error**: floating point numbers (the `float` t
 calculations involving fractions may have very small errors.
 
 Find another example using `float` arithmetic that doesn't give the exact result you would expect.
+
+
+## Comrades
+
+<img src="https://ultra-x.co/wp-content/uploads/2020/01/comrades-marathon-africa-ultra-x.jpg" width="50%" />
+
+Write a program that can read in a number of kilometers as input and print the corresponding number of miles. There are
+1.60934 kilometers in one mile.
+
+The Comrades Maraton in South Africa is the world's oldest and largest ultramrathon race, established in 1921. 
+It is run between the cities of Durban and Pietermaritzburg in South Africa, a distance of about 87 km. The race was cancelled in 2020, but more than 25000 
+people participate during a normal year. The direction alternates every year, with the course beginning in Durban being mostly uphill and the other direction being mostly downhill, so there are actually two records for the course.
+
+What is the length of Comrades Marathon in miles?
