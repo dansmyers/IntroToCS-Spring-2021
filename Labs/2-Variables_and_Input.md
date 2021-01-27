@@ -96,8 +96,6 @@ Run the `python3` prompt again and output the following calculation. Do you get 
 .1 + .2
 ```
 
-What do you see?
-
 This is an example of **numerical error**: floating point numbers (the `float` type) can only represent some numbers approximately so 
 calculations involving fractions may have very small errors.
 
