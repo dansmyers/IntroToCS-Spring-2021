@@ -63,9 +63,8 @@ Write a program to read in a weight in kilograms and convert it to pounds. There
 Display the result to one decimal place.
 
 The current world record for weight lifted overhead in the clean and jerk is 263.5 kg, held by Iranian superheavy
-weightlifter / human vending machine [Hossein Rezazadeh](https://www.youtube.com/watch?v=FOE-PZJq2sk):
-
-Use your program to calculate the weight of Rezazadeh's record lift in pounds.
+weightlifter / human vending machine [Hossein Rezazadeh](https://www.youtube.com/watch?v=FOE-PZJq2sk). Use your program to calculate the weight of Rezazadeh's record lift 
+in pounds.
 
 
 ## Mystery Operator
