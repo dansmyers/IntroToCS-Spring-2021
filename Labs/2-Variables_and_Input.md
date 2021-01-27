@@ -62,8 +62,8 @@ print('He can solve any math problem by simply pushing the computer\'s little %s
 Write a program to read in a weight in kilograms and convert it to pounds. There are about 2.20462 pounds in one kilogram.
 Display the result to one decimal place.
 
-The current world record for weight lifted overhead in the clean and jerk is 263.5 kg, held by Iranian superheavy
-weightlifter / human vending machine [Hossein Rezazadeh](https://www.youtube.com/watch?v=FOE-PZJq2sk). Use your program to calculate the weight of Rezazadeh's record lift 
+The current world record for weight lifted overhead in the clean and jerk is 263.5 kg, held by Iranian superheavyweight vending-machine-sized
+weightlifter [Hossein Rezazadeh](https://www.youtube.com/watch?v=FOE-PZJq2sk). Use your program to calculate the weight of Rezazadeh's record lift 
 in pounds.
 
 
