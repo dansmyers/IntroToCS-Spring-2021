@@ -139,7 +139,7 @@ print(r)
 
 The two arguments to `randint` control the range containing the randomized value.
 
-Write a program that asks the user to guess a hidden number (picked using `randint`, then reports how close the guess was to the true value. Here's an example
+Write a program that asks the user to guess a hidden number (picked using `randint`) then reports how close the guess was to the true value. Here's an example
 of what the output should look like:
 
 ```
