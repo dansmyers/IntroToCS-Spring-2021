@@ -91,7 +91,7 @@ We will also use Mimir as an online development and automatic grading platform. 
 |February 25|       Lab 6: Network Performance Measurement| Required lab|
 |March 1|       Lists||
 |March 3|       Using lists for data analysis| Assignment 4 due |
-|March 4|       Lab 7: My Heart Will Go On||
+|March 4|       Lab 7: Wordplay||
 |March 8|       Return to the `for` loop||
 |March 10|      `for` loops part II|Quiz 3|
 |March 11|      Lab 8: Extra day off (no class) ||
