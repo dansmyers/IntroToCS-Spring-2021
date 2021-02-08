@@ -77,11 +77,11 @@ We will also use Mimir as an online development and automatic grading platform. 
 |January 25|    Calculations and variables|  |
 |January 27|    Reading user input| Assignment 1 due|
 |January 28|    Lab 2: Practice problems| |
-|February 1|    Making comparisons||
-|February 3|    The `if` statement| Assignment 2 due |
+|February 1|    Relational operators, the `if` statement ||
+|February 3|    `if-elif-else` | Assignment 2 due |
 |February 4|    Lab 3: Human-Computer Interaction and Fitts' Law| Required lab |
 |February 8|    Adding randomness to your programs||
-|February 10|   Writing simple games|Quiz 1|
+|February 10|   Writing simple text games|Quiz 1|
 |February 11|   Lab 4: RPS||
 |February 15|   Intro to functions||
 |February 17|   Writing functions| Assignment 3 due |
@@ -93,12 +93,12 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 3|       Using lists for data analysis| Assignment 4 due |
 |March 4|       Lab 7: Wordplay||
 |March 8|       Return to the `for` loop||
-|March 10|      `for` loops part II|Quiz 3|
+|March 10|      *Gaiden*: Computer history and architecture |Quiz 3|
 |March 11|      Lab 8: Extra day off (no class) ||
 |March 15|      The `while` loop||
-|March 17|      `while` loops part II| Assignment 5 due |
+|March 17|      Everything so far + Examples | Assignment 5 due |
 |March 18|      Lab 9: Precision and Number Formats| Required lab |
-|March 22|      Working with strings||
+|March 22|      Working with strings ||
 |March 24|      Numbers and data representation |Quiz 4|
 |March 25|      Lab 10: Monte Carlo Word Estimation| Required lab|
 |March 29|      Dictionaries||
