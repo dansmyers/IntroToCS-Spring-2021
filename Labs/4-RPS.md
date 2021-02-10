@@ -1,3 +1,11 @@
+# Games and Functions
+
+## Overview
+
+This lab will let you practice one more text-based game project: rock-paper-scissors, which will tie together everything that we've done in the class up to this point.
+
+The second part of the lab will let you practice writing your own functions and help you get familiar with Python's function syntax.
+
 ## Rock-Paper-Scissors
 
 ### Overview
@@ -169,4 +177,45 @@ Now add more statements to test for the other possible combinations. For example
 if player_move == ROCK and cpu_move == PAPER:
   print('PAPER COVERS ROCK.')
   print('HUMANS...SO SOFT...SO WEAK.')
+```
+
+## You Can't Spell "Function" Without "Fun"
+
+### Overview
+
+
+### `print_area_of_circle`
+
+Complete the program below by writing a function that takes the radius of a circle as input and **prints** the corresponding area.
+
+```
+"""
+Write a function that prints the area of a circle
+"""
+
+from math import pi
+
+def print_area_of_circle(radius):
+    """
+    Complete this function docstring
+    """
+    
+    # Calculate the area of the circle with the input radius
+    
+    # Print the area
+    
+
+### Main
+#
+# Remember: execution of the program starts HERE
+
+print_area_of_circle(1)
+
+print_area_of_circle(10)
+
+print_area_of_circle(100)
+
+# Add one more statement to print the area of a circle with radius 1000
+
+# How about printing the area of a circle with radius 1 million?
 ```
