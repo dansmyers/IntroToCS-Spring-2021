@@ -307,10 +307,12 @@ usd_to_doge(value)
 As a deep thinker and observer of modern society, I truly believe that entomophagy is the wave of the future. Crickets are a naturally renewable (albeit noisy) resource and
 contain proportionally more protein than chicken or beef.
 
-Through a totally unscientific research process, I have learned that the average cricket weighs .5p0 grams and consists of about 60% protein, for an average of .30 grams of protein per cricket.
+Through a totally unscientific research process, I have learned that the average cricket weighs .50 grams and consists of about 60% protein, for an average of .30 grams of protein per cricket.
 
 Write a program to read in a number of grams of protein as input, then use a function to calculate and print the corresponding number of crickets needed to produce that 
 amount of protein. Your function should be called `grams_of_protein_to_crickets` and take one input parameter named `grams`.
+
+How many crickets are required to make 1 kilogram of protein?
 
 ```
 """
@@ -329,4 +331,4 @@ value = float(input('Enter a number of grams of protein: '))
 grams_of_protein_to_crickets(value)
 ```
 
-
+### 
