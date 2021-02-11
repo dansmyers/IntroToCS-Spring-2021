@@ -266,10 +266,44 @@ Convert pounds to Willigrams
 ### Main
 
 # Read a number of pounds
-value = int(input('Enter a number of pounds: ')
+value = int(input('Enter a number of pounds: '))
 
-# Perform the conversion and print the result
+# Call the function that performs the conversion and prints the result
 pounds_to_willigrams(value)
 ```
 
-### 
+### Fake Internet Meme Money
+
+<img src="https://external-preview.redd.it/3_iVT6i7dReTdMXS-bNiIS0U9p2QTsfq6BUDC57b8tc.jpg?auto=webp&s=5943d7cf04be56a4de8cf045667e41631c02a90e" width="35%" />
+
+Dogecoins, the favored cryptocurrency of shiba inus everywhere, currently trades for about .071987 USD per DOGE.
+
+Write a program that reads a number of dollars as input, then uses a function to calculate and print the corresponding amount of DOGE. Your function should be called
+`usd_to_doge` and take one input parameter called `usd`.
+
+Tip: think carefully about how to do the conversion and whether you need to multiply or divide.
+
+```
+"""
+USD to DOGE converter
+"""
+
+### Write your function definition here
+
+
+### Main
+
+# Read a number of dollars
+value = float(input('Enter a number of dollars: '))
+
+# Call a function that converts to DOGE and prints the result
+usd_to_doge(value)
+```
+
+### Cricket Protein Powder
+
+<img src="https://cdn.shopify.com/s/files/1/0904/3248/products/chocolate_front_1408x1408.jpg?v=1566244530" width="35%" />
+
+As a deep thinker and observer of modern society, I truly believe that entomophagy is the wave of the future.
+
+
