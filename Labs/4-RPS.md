@@ -181,9 +181,6 @@ if player_move == ROCK and cpu_move == PAPER:
 
 ## You Can't Spell "Function" Without "Fun"
 
-### Overview
-
-
 ### `print_area_of_circle`
 
 Complete the program below by writing a function that takes the radius of a circle as input and **prints** the corresponding area.
@@ -219,3 +216,60 @@ print_area_of_circle(100)
 
 # How about printing the area of a circle with radius 1 million?
 ```
+
+### `print_area_of_rectangle`
+
+Complete the following program with a function that takes an input length and width, then prints the area of the corresponding rectangle. This example shows how to write a
+function that takes multiple parameters.
+
+```
+"""
+Write a function that prints the area of a rectangle
+"""
+
+def print_area_of_rectangle(length, width):
+    """
+    Complete this function docstring
+    """
+    
+    # Calculate the area of the rectangle
+    
+    # Print the result
+    
+
+### Main
+
+print_area_of_rectangle(10, 5)
+
+print_area_of_rectangle(3, 11)
+
+# Add a statement to print the area of a rectangle with length 7 and width 17
+
+# Write a statement that calls the function and prints 99
+```
+
+### Willigrams
+
+After Scott invented the Scottometer, Will needed his own unit of measurement so he created the **Willigram**. The actual magnitude of the Willigram is a bit uncertain (the
+definition has varied over time), but is currently set at 10000 pounds per Willigram (no, this does not make any sense; just go with it).
+
+Write a program that reads a number of pounds from the user and prints the corresponding number of Willigrams. Use a function called `pounds_to_willigrams` to perform the conversion and print the result. Your function should take one input called `pounds`. Make sure that your function has an appropriate docstring.
+
+```
+"""
+Convert pounds to Willigrams
+"""
+
+### Write your function definition here
+
+
+### Main
+
+# Read a number of pounds
+value = int(input('Enter a number of pounds: ')
+
+# Perform the conversion and print the result
+pounds_to_willigrams(value)
+```
+
+### 
