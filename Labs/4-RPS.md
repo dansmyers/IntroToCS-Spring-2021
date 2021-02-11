@@ -304,6 +304,29 @@ usd_to_doge(value)
 
 <img src="https://cdn.shopify.com/s/files/1/0904/3248/products/chocolate_front_1408x1408.jpg?v=1566244530" width="35%" />
 
-As a deep thinker and observer of modern society, I truly believe that entomophagy is the wave of the future.
+As a deep thinker and observer of modern society, I truly believe that entomophagy is the wave of the future. Crickets are a naturally renewable (albeit noisy) resource and
+contain proportionally more protein than chicken or beef.
+
+Through a totally unscientific research process, I have learned that the average cricket weighs .5p0 grams and consists of about 60% protein, for an average of .30 grams of protein per cricket.
+
+Write a program to read in a number of grams of protein as input, then use a function to calculate and print the corresponding number of crickets needed to produce that 
+amount of protein. Your function should be called `grams_of_protein_to_crickets` and take one input parameter named `grams`.
+
+```
+"""
+Convert grams of protein into crickets
+"""
+
+### Write your function definition here
+
+
+### Main
+
+# Read input number of grams of protein
+value = float(input('Enter a number of grams of protein: '))
+
+# Call the function to perform the conversion and print the result
+grams_of_protein_to_crickets(value)
+```
 
 
