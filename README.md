@@ -82,11 +82,11 @@ We will also use Mimir as an online development and automatic grading platform. 
 |February 4|    Lab 3: Human-Computer Interaction and Fitts' Law| Required lab |
 |February 8|    Adding randomness to your programs||
 |February 10|   Writing simple text games|Quiz 1|
-|February 11|   Lab 4: RPS||
-|February 15|   Intro to functions||
-|February 17|   Writing functions| Assignment 3 due |
+|February 11|   Lab 4: RPS + Intro to Functions||
+|February 15|   Functions that return values ||
+|February 17|   Pratice writing functions| Assignment 3 due |
 |February 18|   Lab 5: Choose Your Own Adventure||
-|February 22|       Writing even more functions||
+|February 22|       Stepwise refinement ||
 |February 24|       Local variables and scope|Quiz 2|
 |February 25|       Lab 6: Network Performance Measurement| Required lab|
 |March 1|       Lists||
