@@ -28,13 +28,15 @@ The CYOA books are part of the larger gaming lineage of **interactive fiction**.
 IF is kind of a weird genre. It's both totally unpopular and extremely popular at the same time. There are still writers creating interesting parser-based IF in the 
 style of the early text adventure games: Modern IF in this style is often experimental or socially-conscious. Basically none of that crosses over to the commerical gaming market. On the other hand, there is huge genre of visual novel games, dating sims, and other text-and-image games that have achieved widespread popularity, even if they often get tagged as "casual" or "romance" games.
 
+While I'm certainly **not** a connosieur of the form, many of these games are gloriously weird.
+
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/25/gaming-hatoful-boyfriend-screenshot-2_1.jpg" width="60%" />
 
 *Hatoful Boyfriend*, the dating sim game where the guys you're trying to date just happen to be pigeons.
 
 <img src="https://i.pcmag.com/imagery/articles/03vQmmuNtMgqoVDDHYMhunN-1.1569489919.fit_lim.png" width="60%" />
 
-*I Love You, Colonel Sanders*, the KFC-themed dating simulator.
+*I Love You, Colonel Sanders*, the KFC-themed dating simulator. Notice me, Colonel *senpai*!
 
 ## Example
 
