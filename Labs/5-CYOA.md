@@ -2,9 +2,9 @@
 
 ## Description
 
-If you had been a kid in the 80's, your elementary school library would have been stuffed with *Choose Your Own Adventure* books, for the downtime you had when you weren't playing [*Oregon Trail*](https://en.wikipedia.org/wiki/The_Oregon_Trail_(1985_video_game)) on your school's Apple II computers.
-
 <img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Cave_of_time.jpg" width="35%" />
+
+If you had been a kid in the 80's, your elementary school library would have been stuffed with *Choose Your Own Adventure* books, for the downtime you had when you weren't playing [*Oregon Trail*](https://en.wikipedia.org/wiki/The_Oregon_Trail_(1985_video_game)) on your school's Apple II computers.
 
 Each book was the story of "you", the nameless protagonist, making your way through some type of fantastic adventure story. After reading for a few pages, you'd be offered a choice. For example,
 
@@ -13,15 +13,25 @@ Each book was the story of "you", the nameless protagonist, making your way thro
 
 Each choice would lead to a different path of the story and eventually you would reach an ending page, which might good, bad, or curiously ambiguous.
 
-The CYOA books are part of the larger gaming lineage of **interactive fiction**. Some of the earliest PC games were structured as interactive stories, where the player types commands to move around the world, gather items, and solve puzzles. These early text-based IF games later evolved into graphical adventure games.
+We're going to use Python to write our own text-based Choose Your Own Adventure story. A key idea of this program will be **using functions to organize a complex program**. 
+Each "page" of the story will be its own function. Within each function, print a little descriptive text, then prompt the user to make a choice. 
+Each choice corresponds to another function call, which runs the code for the next page.
+
+## Interactive Fiction
 
 <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/Zork_I_box_art.jpg" width="35%" />
 
 *The Zork series published by Infocom was an influential early computer game. It is pitch black. You are likely to be eaten by a grue.*
 
-We're going to use Python to write our own text-based Choose Your Own Adventure story. A key idea of this program will be **using functions to organize a complex program**. 
-Each "page" of the story will be its own function. Within each function, print a little descriptive text, then prompt the user to make a choice. 
-Each choice corresponds to another function call, which runs the code for the next page.
+The CYOA books are part of the larger gaming lineage of **interactive fiction**. Some of the earliest PC games were structured as interactive stories, where the player types commands to move around the world, gather items, and solve puzzles. These early text-based IF games later evolved into graphical adventure games.
+
+IF is kind of a weird genre. It's both totally unpopular and extremely popular at the same time. There are still writers creating interesting parser-based IF in the 
+style of the early text adventure games: Modern IF in this style is often experimental or socially-conscious. Basically none of that crosses over to the commerical gaming market. On the other hand, there is huge genre of visual novel games, dating sims, and other text-and-image games that have achieved widespread popularity, even if they often get tagged as "casual" or "romance" games.
+
+<img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/25/gaming-hatoful-boyfriend-screenshot-2_1.jpg" width="35%" />
+
+*Hatoful Boyfriend*, the dating sim game where the guys you're trying to date just happen to be pigeons.
+
 
 ## Example
 
