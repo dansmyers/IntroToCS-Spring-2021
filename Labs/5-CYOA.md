@@ -28,7 +28,7 @@ The CYOA books are part of the larger gaming lineage of **interactive fiction**.
 IF is kind of a weird genre. It's both totally unpopular and extremely popular at the same time. There are still writers creating interesting parser-based IF in the 
 style of the early text adventure games: Modern IF in this style is often experimental or socially-conscious. Basically none of that crosses over to the commerical gaming market. On the other hand, there is huge genre of visual novel games, dating sims, and other text-and-image games that have achieved widespread popularity, even if they often get tagged as "casual" or "romance" games.
 
-While I'm certainly **not** a connosieur of the form, many of these games are gloriously weird.
+While I'm certainly **not** a connossieur of the form, many of these games are gloriously weird.
 
 <img src="https://cdn.akamai.steamstatic.com/steam/apps/251990/ss_267dc852c216b2bf58d48c58f3ea31d6896e19e4.1920x1080.jpg?t=1568494485" width="60%" />
 
