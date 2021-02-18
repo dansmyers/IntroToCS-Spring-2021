@@ -2,7 +2,7 @@
 
 ## Description
 
-<img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Cave_of_time.jpg" width="35%" />
+<img src="https://upload.wikimedia.org/wikipedia/en/f/f0/Cave_of_time.jpg" width="25%" />
 
 If you had been a kid in the 80's, your elementary school library would have been stuffed with *Choose Your Own Adventure* books, for the downtime you had when you weren't playing [*Oregon Trail*](https://en.wikipedia.org/wiki/The_Oregon_Trail_(1985_video_game)) on your school's Apple II computers.
 
@@ -32,6 +32,9 @@ style of the early text adventure games: Modern IF in this style is often experi
 
 *Hatoful Boyfriend*, the dating sim game where the guys you're trying to date just happen to be pigeons.
 
+<img src="https://i.pcmag.com/imagery/articles/03vQmmuNtMgqoVDDHYMhunN-1.1569489919.fit_lim.png" width="35%" />
+
+*I Love You, Colonel Sanders*, the KFC-themed dating simulator.
 
 ## Example
 
