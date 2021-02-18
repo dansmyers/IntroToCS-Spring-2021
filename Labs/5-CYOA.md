@@ -36,7 +36,7 @@ While I'm certainly **not** a connosieur of the form, many of these games are gl
 
 <img src="https://i.pcmag.com/imagery/articles/03vQmmuNtMgqoVDDHYMhunN-1.1569489919.fit_lim.png" width="60%" />
 
-*I Love You, Colonel Sanders*, the KFC-themed dating simulator. Notice me, Colonel *senpai*!
+*I Love You, Colonel Sanders*, the KFC-themed dating simulator. Colonel *senpai*, notice me!
 
 ## Example
 
