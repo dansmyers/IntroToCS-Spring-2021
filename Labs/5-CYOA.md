@@ -32,7 +32,7 @@ While I'm certainly **not** a connossieur of the form, many of these games are g
 
 <img src="https://cdn.akamai.steamstatic.com/steam/apps/251990/ss_267dc852c216b2bf58d48c58f3ea31d6896e19e4.1920x1080.jpg?t=1568494485" width="60%" />
 
-*Long Live the Queen*, a stats-based strategy game where you have to train skills that will allow you to survive until your coronation.
+*Long Live the Queen*, a dark and gritty stats-based princess simulator where you have to train skills that will allow you to survive until your coronation.
 
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/25/gaming-hatoful-boyfriend-screenshot-2_1.jpg" width="60%" />
 
