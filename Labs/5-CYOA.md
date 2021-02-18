@@ -176,3 +176,43 @@ the story to develop.
 - For each choice, call a function that decribes what you want to happen next.
 
 - Then go write those methods to create the next pages of the story.
+
+## More Questions
+
+### You Will Find True Love on Flag Day
+
+Take a look at the following flag design:
+
+```
++--+--+--+--+--+
++**+  +**+  +**+
++**+  +**+  +**+
++--+--+--+--+--+
++  +**+  +**+  +
++  +**+  +**+  +
++--+--+--+--+--+
++**+  +**+  +**+
++**+  +**+  +**+
++--+--+--+--+--+
+```
+
+Can you write a group of functions that will print this flag? Try to use the minimum number of individual `print` statements in your program.
+
+Tips:
+
+There's no one ideal way to do this. It's easy to write functions that print entire lines, but can you take advantage of the repeating patterns to break things down more?
+
+To print without moving to the next line you can set the optional `end` argument of `print` to an empty string.
+
+```
+print('+--+', end=''
+```
+
+
+### Would Everyone Please Rise for the Presentation of Our National Colors
+
+Now design your own **sweet** text flag and write a program that uses methods to print it. Again, try to minimize the number of individual `print` statements in your code and 
+try to break things down to the finest level of detail possible.
+
+[Proposal to update the Rollins Alma Mater](https://www.youtube.com/watch?v=fiyL-bKwL4U).
+
