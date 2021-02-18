@@ -30,6 +30,10 @@ style of the early text adventure games: Modern IF in this style is often experi
 
 While I'm certainly **not** a connosieur of the form, many of these games are gloriously weird.
 
+<img src="https://cdn.akamai.steamstatic.com/steam/apps/251990/ss_267dc852c216b2bf58d48c58f3ea31d6896e19e4.1920x1080.jpg?t=1568494485" width="60%" />
+
+*Long Live the Queen*, a strategy game where you have to train skills that will allow you to survive until your coronation.
+
 <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/14/25/gaming-hatoful-boyfriend-screenshot-2_1.jpg" width="60%" />
 
 *Hatoful Boyfriend*, the dating sim game where the guys you're trying to date just happen to be pigeons.
