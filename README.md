@@ -84,32 +84,32 @@ We will also use Mimir as an online development and automatic grading platform. 
 |February 10|   Writing simple text games|Quiz 1|
 |February 11|   Lab 4: RPS + Intro to Functions||
 |February 15|   Functions that return values ||
-|February 17|   Pratice writing functions| Assignment 3 due |
+|February 17|   Pratice writing functions + Stepwise refinement| Assignment 3 due |
 |February 18|   Lab 5: Choose Your Own Adventure||
-|February 22|       Stepwise refinement ||
-|February 24|       Local variables and scope|Quiz 2|
+|February 22|       Local variables and scope ||
+|February 24|       Lists + The `for` loop |Quiz 2|
 |February 25|       Lab 6: Network Performance Measurement| Required lab|
-|March 1|       Lists||
-|March 3|       Using lists for data analysis| Assignment 4 due |
-|March 4|       Lab 7: Wordplay||
-|March 8|       Return to the `for` loop||
-|March 10|      *Gaiden*: Computer history and architecture |Quiz 3|
+|March 1|       Using lists for data analysis ||
+|March 3|       More `for` loops | Assignment 4 due |
+|March 4|       Lab 7: Wordplay + Files||
+|March 8|       The `while` loop||
+|March 10|      Loop practice  |Quiz 3|
 |March 11|      Lab 8: Extra day off (no class) ||
-|March 15|      The `while` loop||
-|March 17|      Everything so far + Examples | Assignment 5 due |
+|March 15|      Numbers and data representation ||
+|March 17|      Dictionaries | Assignment 5 due |
 |March 18|      Lab 9: Precision and Number Formats| Required lab |
-|March 22|      Working with strings ||
-|March 24|      Numbers and data representation |Quiz 4|
+|March 22|      Letter frequencies and code cracking ||
+|March 24|      Intro to classes and objects  |Quiz 4|
 |March 25|      Lab 10: Monte Carlo Word Estimation| Required lab|
-|March 29|      Dictionaries||
-|March 31|      Letter frequencies and code cracking| Assignment 6 due |
+|March 29|      Writing classes that have data ||
+|March 31|      Writing classes that have methods | Assignment 6 due |
 |April 1|       Lab 11: Intro to Pandas| |
-|April 5|       Intro to classes and objects||
-|April 7|       Writing classes that have data|Quiz 5|
-|April 8|       Lab 12: More Pandas|Required lab|
-|April 12|      Writing classes that have methods||
-|April 14|      Class writing practice| Assignment 7 due |
-|April 15|      Lab 13: Pandas 3|Required lab|
+|April 5|       The Web + HTML/CSS ||
+|April 7|       The Flask framework |Quiz 5|
+|April 8|       Lab 12: My Heart Will Go On + Classification |Required lab|
+|April 12|      More web and flask ||
+|April 14|      Web programming practice | Assignment 7 due |
+|April 15|      Lab 13: |Required lab|
 |April 19|      Flex for Fox Day ||
 |April 21|      Topic |Quiz 6|
 |April 22|      Lab: Work on projects ||
