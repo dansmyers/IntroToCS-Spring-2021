@@ -19,8 +19,10 @@ def tape():
 # Totally gratuitous ASCII art
 tape()
 
+
 # Create an empty list to hold the songs
 songs = []
+
 
 # Use the .append method to add an element to the end of the list
 #
