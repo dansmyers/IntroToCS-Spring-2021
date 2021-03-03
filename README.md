@@ -90,7 +90,7 @@ We will also use Mimir as an online development and automatic grading platform. 
 |February 24|       Lists + The `for` loop |Quiz 2|
 |February 25|       Lab 6: Network Performance Measurement| Required lab|
 |March 1|       Using lists for data analysis ||
-|March 3|       More `for` loops | Assignment 4 due |
+|March 3|       The Caesar Cipher and the `range` function | Assignment 4 due |
 |March 4|       Lab 7: Wordplay + Files||
 |March 8|       The `while` loop||
 |March 10|      Loop practice  |Quiz 3|
