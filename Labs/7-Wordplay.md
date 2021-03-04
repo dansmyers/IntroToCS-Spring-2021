@@ -72,6 +72,7 @@ for line in f:
 ### Starts with `q`
 
 <img src="https://en.numista.com/catalogue/photos/albanie/5eb334f6befca9.58828003-360.jpg" width="30%" />
+
 *A qindar is a subunit of the lek, Albania's unit of currency*.
 
 Let's modify the basic word-printing example to print only the words that start with `q`.
