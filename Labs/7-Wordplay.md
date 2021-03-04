@@ -4,13 +4,106 @@
 
 ## Setup
 
+Begin by downloading the `words.txt` file posted to Canvas.
 
+Open your Mimir IDE, then use `File ---> Upload` to copy `words.txt` up to your Mimir workspace. You can verify that the upload completed by typing the listing command
+
+```
+ls
+```
+
+and observing the `words.txt` is now in your home directory along with the `CMS_120` directory.
+
+Make a new directory to hold this lab's programs:
+
+```
+mkdir CMS_120/Lab_7
+```
+
+Now, **move** the words file into the lab directory. The move command is `mv`, which can also be used to rename files. **Double-check the spelling of your destination
+directory before you run the command**. If you type the wrong thing, your file might end up in a different location.
+
+```
+mv words.txt CMS_120/Lab_7
+```
+
+You cam then `cd` to the lab directory and verify that `words.txt` is there.
+
+```
+cd CMS_120/Lab_7
+
+ls
+```
 
 ## Questions
 
+### Print the words
+
+Our first program will simply print all of the words in the wordlist. There are four interesting pieces here:
+
+- The `open` command creates a connection to a file. `open` takes two arguments: The name of the file and a mode, which is `'r'` for reading in this example (if you 
+wanted to write to the file the second argument would be `'w'`; there are a few other option).
+
+- Once the file is open, Python returns a **file handle** that we can use to interact with it. Here, variable `f` stores the handle to the open `words.txt` file.
+
+- A file is a sequence of lines, so we can iterate over them with the `for` loop. The loop in the code below steps through each line in the file one at a time. It's possible
+to read from files at a more granular level, like one word or one character at a time, but reading entire lines will work for this lab.
+
+- `line = line.strip()` uses the  built-in `strip` function to remove trailing whitespace from the line. This statement removes the trailing newline character that would 
+otherwise create an extra blank line between the words.
+  
+```
+"""
+Print the words in the list
+"""
+
+# Open the file for reading
+f = open('words.txt', 'r')
+
+# Iterate through the lines
+for line in f:
+
+    # Strip the terminating newline character
+    line = line.strip()
+   
+    print(line)
+```
+
+### Starts with `q`
+
+<img src="https://en.numista.com/catalogue/photos/albanie/5eb334f6befca9.58828003-360.jpg" width="30%" />
+*A qindar is a subunit of the lek, Albania's unit of currency*.
+
+Let's modify the basic word-printing example to print only the words that start with `q`.
+
+```
+"""
+Words that start with q
+"""
+
+def starts_with_q(word):
+    return word[0] == 'q'
+    
+
+### Main
+f = open('words.txt', 'r')
+
+for line in f:
+
+    # Strip the terminating newline character
+    line = line.strip()
+    
+    if starts_with_q(line):
+        print(line)
+```
+
+**Use this program as a template for all of the following programs**. Each one of your answers to the following questions should have a **function** that implements
+whatever tests are required to answer the problem.
+
+
 ### Starts With `q` But Not `qu`
 
-Modify our starting program above to print the words that start with `q` but not `qu`.
+Print the words that start with `q` but not `qu`.
 
 ### Long words
 
