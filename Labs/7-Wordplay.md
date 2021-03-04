@@ -1,7 +1,5 @@
 # Wordplay
 
-## Description
-
 ## Setup
 
 Begin by downloading the `words.txt` file posted to Canvas.
