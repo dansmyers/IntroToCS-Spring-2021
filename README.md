@@ -92,8 +92,8 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 1|       Using lists for data analysis ||
 |March 3|       The Caesar Cipher and the `range` function | Assignment 4 due |
 |March 4|       Lab 7: Wordplay + Files||
-|March 8|       The `while` loop||
-|March 10|      Loop practice  |Quiz 3|
+|March 8|       More loop practice ||
+|March 10|      The `while` loop |Quiz 3|
 |March 11|      Lab 8: Extra day off (no class) ||
 |March 15|      Numbers and data representation ||
 |March 17|      Dictionaries | Assignment 5 due |
