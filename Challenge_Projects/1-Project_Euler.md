@@ -64,7 +64,6 @@ while (True):
     if (isPrime(n)):
         numPrimes += 1
     
-    
     if (numPrimes == 10001):
         print(n)
         break
