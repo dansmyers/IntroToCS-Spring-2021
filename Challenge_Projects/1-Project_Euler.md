@@ -65,7 +65,7 @@ while (True):
     
     if (numPrimes == 10001):
         print(n)
-        break; 
+        break
     else:
         n += 1
 ```
