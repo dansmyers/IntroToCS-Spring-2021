@@ -24,10 +24,9 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 Tips:
 
-- Use `while` loop that begins at a small starting value and counts up by 20 on each iteration.
+- Use `while` loop that begins at 20 and counts up by 20 on each iteration (the solution must be a multiple of 20).
 
-- Use an inner `for` loop and a boolean variable to test if the current number is divisible by all of the values from 1 to 20.
-- 
+- Write a function called `is_divisible_by_1_to_20(n)` that uses a `for` loop to check if `n` is divisible by the numbers from 1 to 20.
 
 ### Sum Square Difference (Problem 6)
 
