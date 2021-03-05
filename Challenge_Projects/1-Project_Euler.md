@@ -16,18 +16,6 @@ You can get credit any time before the end of the day on April 26 (the last day 
 
 ## Problems
 
-### Smallest Multiple (Problem 5)
-
-2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
-
-What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
-
-Tips:
-
-- Use `while` loop that begins at 20 and counts up by 20 on each iteration (the solution must be a multiple of 20).
-
-- Write a function called `is_divisible_by_1_to_20(n)` that uses a `for` loop to check if `n` is divisible by the numbers from 1 to 20.
-
 ### Sum Square Difference (Problem 6)
 
 The sum of the squares of the first ten natural numbers is,
@@ -43,6 +31,20 @@ Hence the difference between the sum of the squares of the first ten natural num
 3025 − 385 = 2640.
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+
+### Smallest Multiple (Problem 5)
+
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+Tips:
+
+- Use `while` loop that begins at 20 and counts up by 20 on each iteration (the solution must be a multiple of 20).
+
+- Write a function called `is_divisible_by_1_to_20(n)` that uses a `for` loop to check if `n` is divisible by the numbers from 1 to 20.
+
 
 ### 10001st Prime (Problem 7)
 
