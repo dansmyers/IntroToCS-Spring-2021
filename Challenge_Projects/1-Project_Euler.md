@@ -2,11 +2,11 @@
 
 ## Overview
 
-In this challenge project, you'll complete some problems from [Project Euler](http://projecteuler.net), a site that hosts a lot of interesting mathematical programming challenges. 
-If you successfully complete all five problems, your final grade will be increased by one part of a letter (e.g. B to B+, or B+ to A-). Remember that you can also use this project to raise your letter grade if you've lost credit for any reason.
+In this challenge project, you'll complete some problems from [Project Euler](http://projecteuler.net), a site that hosts a lot of interesting mathematical programming challenges. The project is straightforward: Solve the five Project Euler problems described below. The questions will give you the chance to practice the features from the first 
+half of the class, including loops, conditionals, arithmetic, and functions.
 
-The project is straightforward: solve the five Project Euler problems described below.
-
+ If you successfully complete all five problems, your final grade will be increased by one part of a letter (e.g. B to B+, or B+ to A-). Remember that you can also use this project to raise your letter grade if you've lost credit for any reason.
+ 
 ## Grading
 
 There are no automated tests for this project. To get credit, send me your code and the solutions on Slack, along with a **short** description of your strategy
