@@ -73,7 +73,7 @@ while (True):
 Think about how to test if a number is prime. The straightforward way, which you implemented on Assignment 5, is to test for divisibility by any numbers between 2 and sqrt(n). This could be slow though,
 because you'll spend a lot of time grinding through numbers.
 
-A faster way is to use an array to keep track of the primes you find. It's then sufficient to test for divisibility by the **primes** 
+A faster way is to use a list to keep track of the primes you find. It's then sufficient to test for divisibility by the **primes** 
 that are less than sqrt(n).
 
 Try the straightforward solution first. If it runs for more than, say, a minute, try implementing the faster solution.
