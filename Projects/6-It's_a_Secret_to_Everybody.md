@@ -41,7 +41,7 @@ The enciphered message is in the file `cipher.txt` posted to Canvas. It contains
 Download the file from Canvas, then import it into your Mimir workspace by going to `File --> Upload`. Once you've uploaded the file, it will appear in your Mimir top-level home directory. You can move it to your `CMS_195/Dictionaries` project directory using
 
 ```
-mv ~/cipher.txt ~/CMS_195/Dictionaries
+mv ~/cipher.txt ~/CMS_120/Dictionaries
 ```
 
 Here, the `~` (tilde) symbol is a shortcut that represents your home directory and `mv` is the file move command.
@@ -51,11 +51,15 @@ Here, the `~` (tilde) symbol is a shortcut that represents your home directory a
 
 <img src="https://objects-us-east-1.dream.io/secrettoeverybody/images/secret.png" width="50%" />
 
-You probably want to write two programs, one to do the frequency analysis and one to do the decryption. The frequency analysis program needs to scan the text file and count the occurrences of each letter character. Use the letter-counting example from the video on Canvas as a starting point.
+Write two programs:
 
-The decryption program can read each character in the encrypted input, then look up a translation for that letter and output the translated character to produce the decrypted output. Use a dictionary to store mappings from one character to another.
+- `frequency_analysis.py` to scan the ciphered text file and count the number of occurrences of each character. Use a dictionary to store the counts and our previous letter-counting example as a starting point. Print out the frequency of occurrence of each character.
 
-The frequency analysis results may not be perfect, so you may need to apply a little reasoning and experimentation to get the complete translation.
+- `decode.py` to translate the ciphered text file and print the deciphered version. Use a dictionary to store the mapping for each ciphertext letter to its plaintext counterpart (you'll need to code the mappings in this dictionary **by hand** as part of the program).
+
+Note that the letter frequencies you obtain in step 1 may not perfectly map to the frequencies of letters in ideal English language text. You may need to do a little bit of
+experimentation to find the right mappings and perform the decryption; this is part of the process. **You do not need to (and probably can't) determine the correct mappings
+automatically**. This project is as much of a puzzle as it is a programming task.
 
 You can use the string's `.lower()` method to convert a line to all lowercase letters:
 
@@ -66,3 +70,21 @@ str = 'HELLO ,WORLD.'
 str.lower()
 print(str)  # prints 'hello, world.'
 ```
+
+# Submission and Grading
+
+Put your two Python files and `cipher.txt` into a zip archive. The `zip` command compresses files:
+
+```
+zip Assignment_6_YOUR_NAME.zip cipher.txt frequency_analysis.py decode.py 
+```
+
+Download the zip file from Mimir by navigating to it in your right-hand file browser panel, right-clicking (CTRL + click on Mac), and choosing the "Download File" option. Submit 
+your zip file to the assignment that I'll create on Canvas.
+
+There are **no automated tests** for this project. It is worth up to **four points**, as follows:
+
+1. Frequency analysis program opens `cipher.txt` and iterates through the words in the file.
+2. Frequency analysis program prints out frequency of occurrence for each character.
+3. Decoding program implements a dictionary of letter substitutions.
+4. Decoding program prints out the correct deciphered output (it will be obvious if the text is correct or not).
