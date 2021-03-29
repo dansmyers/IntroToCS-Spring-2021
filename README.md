@@ -103,13 +103,13 @@ We will also use Mimir as an online development and automatic grading platform. 
 |March 25|      Lab 10: Monte Carlo Word Estimation| Required lab|
 |March 29|      Writing classes that have data ||
 |March 31|      Writing classes that have methods | Assignment 6 due |
-|April 1|       Lab 11: Intro to Pandas| |
+|April 1|       Lab 11: Intro to Pandas| Required lab |
 |April 5|       The Web + HTML/CSS ||
 |April 7|       The Flask framework |Quiz 5|
 |April 8|       Lab 12: My Heart Will Go On + Classification |Required lab|
 |April 12|      More web and flask ||
 |April 14|      Web programming practice | Assignment 7 due |
-|April 15|      Lab 13: |Required lab|
+|April 15|      Lab 13: Resume workshop||
 |April 19|      Flex for Fox Day ||
 |April 21|      Topic |Quiz 6|
 |April 22|      Lab: Work on projects ||
