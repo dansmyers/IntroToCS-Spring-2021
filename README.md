@@ -111,7 +111,7 @@ We will also use Mimir as an online development and automatic grading platform. 
 |April 14|      Web programming practice | Assignment 7 due |
 |April 15|      Lab 13: Resume workshop||
 |April 19|      Flex for Fox Day ||
-|April 21|      Topic |Quiz 6|
+|April 21|      Topic |~Quiz 6~|
 |April 22|      Lab: Work on projects ||
 |April 26|      Final day of class | All challenge projects are due |
 
