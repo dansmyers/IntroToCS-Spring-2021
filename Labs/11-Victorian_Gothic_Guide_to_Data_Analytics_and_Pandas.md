@@ -1,5 +1,9 @@
 # The Victorian Gothic Guide to Data Analytics and Pandas
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg/2560px-Caspar_David_Friedrich_-_Abtei_im_Eichwald_-_Google_Art_Project.jpg" width="50%" />
+
+>*The Abby in the Oakwood*, Caspar David Friedrich (1809-10)
+
 ## Description
 
 Pandas is a Python framework for data analytics. In this lab, you'll work through three small projects that will illustrate what it can do. Along the way, we'll also learn a little
