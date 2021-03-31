@@ -186,3 +186,91 @@ Run your script one more time and you'll see that `Survived_boolean` now appears
 
 ## Antibiotics
 
+### Does use of antiseptics during surgery reduce mortality?
+
+Spoiler alert – **yes**! Though this was actually very controversial at the time. Joseph Lister (the namesake of Listerine), an English surgeon in the late 1800s, pioneered the use of carbolic acid as an antiseptic during surgery after observing that it mitigated the smell of sewage waste used to irrigate farm fields with no apparent harm to the livestock grazing there.  
+
+Mortality data for individuals who had upper or lower limb amputations before and after the discovery of antiseptics are presented in the `Lister.csv` dataset.
+
+### Import the data
+
+Create a new file called `lister.py` and start with the following code.
+
+```
+"""
+Analyze the Lister data set
+"""
+
+import pandas as pd
+import numpy as np
+
+# Read the csv file into a dataframe
+df = pd.read_csv('Lister.csv')
+print(df.head())
+```
+
+The output looks like this:
+
+```
+   ID  Antiseptic  Limb  Outcome
+0   1           0     1        0
+1   2           0     1        1
+2   3           0     1        0
+3   4           0     1        0
+4   5           0     1        1
+```
+
+The data set contains four fields:
+
+- `ID`: A numerical identifier for each patient.
+- `Antiseptic`: Whether the amputation was performed before (0) or after (1) the invention of antiseptics.
+- `Limb`: Whether the amputation was performed on a lower (1) or upper (2) limb.
+- `Outcome`: Whether the patient died (0) or survived (1).
+
+### Create new columns
+
+Numeric variables are convenient for encoding, but can be hard to interpret. It's **usually** the case that 0 = False and 1 = True, **but you should never assume that** and make sure to check the interpretation of each field before proceeding with your analysis.
+
+Let's make two new columns to map the `Outcome` and `Antiseptic` fields to descriptive strings.
+
+```
+df['Outcome_str'] = np.where(df['Outcome'] == 1, 'Survived', 'Did not survive')
+df['Antiseptic_use'] = np.where(df['Antiseptic'] == 1, 'Yes', 'No')
+```
+
+You can print the entire frame if you want to see both the first and last rows:
+
+```
+print(df)
+```
+
+Again, re-run the script and verify that the new columns have been created and have appropriate values.
+
+### Frequency tables
+
+How many amputees survived vs. did not survive their operations? The built-in `value_counts` method returns the number of occurences for each distinct value in a data column.
+
+```
+print(df['Outcome_str'].value_counts())
+```
+
+```
+Survived           53
+Did not survive    22
+```
+
+There were more survivals overall than deaths, but what we really want to know is whether the introduction of antiseptics had an impact on the probability of survival. The `crosstab` method creates tables for comparing the interactions of multiple variables. This line will constuct a crosstab dataframe showing the interaction of `Outcome_str` and `Antiseptic_use`.
+
+```
+tab = pd.crosstab(index=df['Antiseptic_use'], columns=df['Outcome_str'], normalize=True) * 100
+print(tab)
+```
+
+Details:
+
+- `crosstab` is part of Pandas, so the statement starts with `pd`. It's not a method of the dataframe; using `df` would give an error.
+- The `index` argument specifies the field to place on the rows of the frequency table.
+- The `columns` argument specifies the field for the columns.
+- `normalize=True` calculates percentages instead of using raw counts.
+- Multiplying by 100 puts the percentages into the range 0-100 for readability.
+
