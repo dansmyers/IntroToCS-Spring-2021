@@ -23,10 +23,6 @@ At the end of this lab, you'll submit **three Python programs and three PDF plot
 The three labs we're going to complete were originally designed by my wife Chelsea for her book,
 [*Project-Based R Companion to Introductory Statistics*](https://www.taylorfrancis.com/books/mono/10.1201/9780429292002/project-based-companion-introductory-statistics-chelsea-myers?context=ubx&refId=262ee6fc-50b7-4b79-a116-d508a2270467). She has &ndash; let's call it &ndash; a *fascination* with weird and morbid 19th Century data sets, which is one of her many excellent qualities.
 
-## Pandas Background
-
-
-
 ## Get the Data
 
 The three CSV files are posted to Canvas. Download them all, then upload them to your Mimir workspace using the `File ---> Upload` menu.
@@ -186,6 +182,8 @@ Run your script one more time and you'll see that `Survived_boolean` now appears
 
 ## Antibiotics
 
+<img src="https://www.listerine.com/sites/listerine_us_2/files/styles/jjbos_adaptive_images_generic-mobile/public/taco-images/listerine_moutwash_products_new_0.jpg?timestamp=1608240595" width="50%" />
+
 ### Does use of antiseptics during surgery reduce mortality?
 
 Spoiler alert – **yes**! Though this was actually very controversial at the time. Joseph Lister (the namesake of Listerine), an English surgeon in the late 1800s, pioneered the use of carbolic acid as an antiseptic during surgery after observing that it mitigated the smell of sewage waste used to irrigate farm fields with no apparent harm to the livestock grazing there.  
@@ -338,9 +336,11 @@ To see the plot, use your left-hand file browser pane to find your CMS_120/Lab_1
 
 ## The Civil War
 
-### Determine the casualty rate for Union Army soldiers in companies from Ohio during the US Civil War.
 
 <img src="https://www.history.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTU3ODc5MDgzNDc1NzQwMzgz/abraham-lincoln-at-antietam-during-civil-war.jpg" width="50%" />
+
+### Determine the casualty rate for Union Army soldiers in companies from Ohio during the US Civil War.
+
 
 Approximately 618,000 Union and Confederate soldiers died in battle and from starvation and disease during the single bloodiest conflict in United States history: The Civil War. To put this in perspective, about 400,000 US soldiers perished during the second-most-deadly conflict, World War II. Despite the terrible conditions soldiers faced in the field, remarkably good records about these men, their backgrounds, and their fates have been preserved.  
 
