@@ -423,15 +423,15 @@ At this point we should be curious about the very large and very small observati
 
 We’ll explore the second case – that the unusual observations are the result of errors – first and then, if we can’t find any errors, we’ll do what we can to confirm that the outliers are correct. When investigating errors, it’s useful to start at the point you noticed the potential error and then work backwards toward the original source of the data to see if you can identify where an error might have been introduced.  
 
-The first thing to consider is that we made an error with our plots or calculations. We can run `View(Ohio)`, and, because there are only 45 observations, we can scroll through the spreadsheet view of the data and see that there is one company with 180 soldiers and one with only 10 soldiers. We have not made an error plotting or calculating the summary measures.
+The first thing to consider is that we made an error with our plots or calculations. There are only 45 observations, so you could check the data frame and see that there is one company with 180 soldiers and one with only 10 soldiers. We have not made an error plotting or calculating the summary measures.
 
-The next possibility is that there was an error reading in the data from Excel into RStudio. To check this, we can open the `Ohio.csv` file and look at the data there. Again, we see Company 78D has 180 soldiers and Company 195B as 10 soldiers. So there is not an error reading in the dataset from Excel.
+The next possibility is that there was an error reading in the data. To check this, open the `Ohio.csv` file and look at the data there. Again, we see Company 78D has 180 soldiers and Company 195B as 10 soldiers, so there is no apparent error in reading the data with Pandas.
 
-Now we must consider a possible error converting the data from its previous form into the Excel spreadsheet. The dataset is taken from this paper:
+Now we must consider a possible error in creating the CSV file. The dataset is taken from this paper:
 
 > C. Lee (1999). "Selective Assignment of Military Positions in the Union Army: Implications for the Impact of the Civil War", Social Science History, Vol. 23, #1, pp 67-97.
 
-[You can find the paper here](https://www.jstor.org/stable/1171541?seq=1#metadata_info_tab_contents).
+[You can find the paper here](https://www.jstor.org/stable/1171541?seq=1#metadata_info_tab_contents). Open it up and navigate to Table 3. Take a moment and find the entry for Companies 78D and 195B. Do you see anything?
 
 We see in Table 3 of the paper that nearly all of the records for "number of soldiers" match, including Company 78D with 180 soldiers. However, if we look at the second page of Table 3, **we see that Company 195B has 100 soldiers, not 10 soldiers**. We have found an error, and we can confidently edit the `Ohio.csv` dataset to change the number of soldiers in Company 195B to 100.
 
