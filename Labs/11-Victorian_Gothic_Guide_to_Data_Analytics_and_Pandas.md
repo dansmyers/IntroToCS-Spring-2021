@@ -274,3 +274,194 @@ Details:
 - `normalize=True` calculates percentages instead of using raw counts.
 - Multiplying by 100 puts the percentages into the range 0-100 for readability.
 
+Here is the output:
+
+```
+Outcome_str     Did not survive   Survived
+Antiseptic_use                            
+No                    21.333333  25.333333
+Yes                    8.000000  45.333333
+```
+
+The results tell us that, out of the entire data set, 8% of patients fall into the category of `Yes - Did Not Survive`. About 21% fall into `No - Did Not Survive`.
+
+Make one more modification. Setting `normalize='index'` will calculation fractions across the rows rather than over the entire data set.
+
+```
+tab = pd.crosstab(index=df['Antiseptic_use'], columns=df['Outcome_str'], normalize='index') * 100
+print(tab)
+```
+
+The results now clearly illustrate the change in survival rate from incorporating antiseptics. Before their use, about 45% of patients did not survive their amputations; after, only about 15% of patients did not survive.
+
+```
+Outcome_str     Did not survive   Survived
+Antiseptic_use                            
+No                    45.714286  54.285714
+Yes                   15.000000  85.000000
+```
+
+### Plot
+
+One final part for this section: Let's visualize the results as a bar plot. Pandas includes a built-in plottin library and there are also several frameworks that can be used to create plots in Python.
+
+Pandas' built-in plotting features are implemented on top of a lower-level library called matplotlib. The first thing that we need to do is get access to matplotlib.
+Go back up to the **top** of your script and add the following code below the two `import` statements.
+
+```
+import matplotlib
+matplotlib.use('Agg') # <--- Required for plotting on Mimir
+from matplotlib import pyplot as plt
+```
+
+Now add the following lines at the bottom of the script.
+
+```
+tab.plot(kind='bar', stacked=False)
+plt.ylabel('Percent')
+plt.ylim([0, 100])
+plt.savefig('test.pdf', bbox_inches='tight')
+plt.close()
+```
+
+Here are the details:
+
+- `tab.plot` creates a plot from the data frame created by `crosstab`. Because we are working on Mimir, we can't directly visualize the plot immediately; instead, we have to save it as a PDF and then download the PDF from Mimir to view the result.
+
+- The next two lines set properties (y-axis label and y-axis range) for the plot.
+
+- `savefig` outputs the plot to a PDF. The optional `bbox_inches='tight'` argument sets the PDF to fit tightly around the figure.
+
+- `plt.close()` closes the plot in memory, which allows the script to proceed and complete.
+
+To see the plot, use your left-hand file browser pane to find your CMS_120/Lab_11 directory. Right-click (or CTRL + click on Mac) on the file and select "Dowload". You can then view the PDF by opening it in your computer's Downloads folder.
+
+## The Civil War
+
+### Determine the casualty rate for Union Army soldiers in companies from Ohio during the US Civil War.
+
+<img src="https://www.history.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTU3ODc5MDgzNDc1NzQwMzgz/abraham-lincoln-at-antietam-during-civil-war.jpg" width="50%" />
+
+Approximately 618,000 Union and Confederate soldiers died in battle and from starvation and disease during the single bloodiest conflict in United States history: The Civil War. To put this in perspective, about 400,000 US soldiers perished during the second-most-deadly conflict, World War II. Despite the terrible conditions soldiers faced in the field, remarkably good records about these men, their backgrounds, and their fates have been preserved.  
+
+The `Ohio.csv` dataset contains records from 45 companies from Ohio during the United States Civil War including the number of soldiers in the company, the year the company was formed, details about the demographic make-up of each company as well as the overall mortality and mortality due to injury and illness. We wish to describe the mortality rates for these companies from Ohio during the US Civil War.
+
+### Load the data
+
+Start by creating a new file called `ohio.py`. Put the following code into it:
+
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+
+import matplotlib
+matplotlib.use('Agg') # <--- Required for plotting on Mimir
+from matplotlib import pyplot as plt
+
+
+# Load the Ohio Civil War dataset
+df = pd.read_csv('Ohio.csv')
+print(df.head())
+```
+
+This script will illustrate the use of Seaborn, a second plotting library that is also built on top of matplotlib. Seaborn includes built-in functions for creating common plots with intelligent default styles. Use the following terminal command to install Seaborn:
+
+```
+sudo pip install seaborn
+```
+
+Here is the output of `head()`:
+
+```
+  Company  No_soldiers  Enlist_yr  Death_total  Death_illness  Death_injury  Pct_farmers  Pct_foreign
+0    006D          100       1861            5              2             3         5.00        38.00
+1    041I          112       1863           11              7             4        59.82        15.18
+2    045B          113       1862           34             32             1        79.65         2.65
+3    050E           90       1862            5              2             3        68.89         5.56
+4    050K           93       1862           14             10             4        61.29        17.20
+```
+
+### Visualize the distribution of casualties
+
+The code below uses Seaborn to create a histogram of the `Death_total` field. The `histplot` function creates a histogram. The `bins` argument specifies the number of histogram bins and the `x` argument specifies which data column to aggregate to construct the distribution.
+
+```
+# Histogram of casualties
+sns.histplot(x='Death_total', data=df, bins=15)
+
+plt.xlabel('Number of casualties')
+
+plt.savefig('hist.pdf', bbox_inches='tight')
+plt.close()
+```
+
+As before, navigate to the plot in your left-hand file browser and use "Download" to view it.
+
+### Visualize the distribution of the size of the companies
+
+The code below creates a box plot showing the distribution of the size of the companies ([go here if you need a refesher on box plots](https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/box-whisker-plots/a/box-plot-review)).
+
+```
+sns.boxplot(y='No_soldiers', data=df)
+
+plt.ylabel('Number of soldiers')
+plt.ylim([0, 200])
+
+plt.savefig('box.pdf', bbox_inches='tight')
+plt.close()
+```
+
+Create the plot and then take a look at it. Do you notice anything interesting?
+
+We see from the circles appearing on the box plot that there is at least one observation on the small side of the distribution and several observations on the large side that are considered outliers.
+
+At this point we should be curious about the very large and very small observations. But what to do? There are two possibilities for what is going on here: 
+
+- The first is that these observations are unusual but correct. There were very large and very small companies in Ohio during this period of the US Civil War. 
+- The second possibility is that there is an error in the data or data analysis.
+
+We’ll explore the second case – that the unusual observations are the result of errors – first and then, if we can’t find any errors, we’ll do what we can to confirm that the outliers are correct. When investigating errors, it’s useful to start at the point you noticed the potential error and then work backwards toward the original source of the data to see if you can identify where an error might have been introduced.  
+
+The first thing to consider is that we made an error with our plots or calculations. We can run `View(Ohio)`, and, because there are only 45 observations, we can scroll through the spreadsheet view of the data and see that there is one company with 180 soldiers and one with only 10 soldiers. We have not made an error plotting or calculating the summary measures.
+
+The next possibility is that there was an error reading in the data from Excel into RStudio. To check this, we can open the `Ohio.csv` file and look at the data there. Again, we see Company 78D has 180 soldiers and Company 195B as 10 soldiers. So there is not an error reading in the dataset from Excel.
+
+Now we must consider a possible error converting the data from its previous form into the Excel spreadsheet. The dataset is taken from this paper:
+
+> C. Lee (1999). "Selective Assignment of Military Positions in the Union Army: Implications for the Impact of the Civil War", Social Science History, Vol. 23, #1, pp 67-97.
+
+[You can find the paper here](https://www.jstor.org/stable/1171541?seq=1#metadata_info_tab_contents).
+
+We see in Table 3 of the paper that nearly all of the records for "number of soldiers" match, including Company 78D with 180 soldiers. However, if we look at the second page of Table 3, **we see that Company 195B has 100 soldiers, not 10 soldiers**. We have found an error, and we can confidently edit the `Ohio.csv` dataset to change the number of soldiers in Company 195B to 100.
+
+Re-run your program and create the corrected plot.
+
+## Calculate and describe the percent mortality in the 45 Ohio companies.
+
+Although our original question wasn’t phrased this way, we are beginning to see what we are really trying to answer isn’t, "How many casualties were there in these Ohio companies?". Because there was quite a bit of variation in company size, we need to answer the question "What percent of the soldiers in each company died during the war?" This is often true in statistical analyses. The relative frequency (or percent) of an occurrence often tells us more than the raw frequency (or count).
+
+To gain insight into the relative frequency of deaths due to any cause, we can create a new variable by dividing the total number of deaths by the number of soldiers in each company and multiplying by 100%. 
+
+```
+# Calculate percent mortality
+df['Percent_mortality'] = df['Death_total'] / df['No_soldiers']
+print(df.describe())
+```
+
+The first line creates a new column by dividing `Death_total` and `No_soldiers`. Pandas is smart enough to vectorize the division operation and apply it across the column
+entries. 
+
+`describe()` calculates summary statistics (mean, median, and quartiles) for the data frame. A company from Ohio typically had a casualty rate of about 7%, and 25% of companies lost fewer than a 5% of their men. Only 25% of companies had a casualty rate of more than 14%, but one company lost 30% of its men. Note that the skewed nature of the data makes the median (7%) a better measure of the "typical" casualty rate than the mean (more than 9%).
+
+Finally, let's create one more plot showing the histogram of `Percent_mortality`:
+
+```
+sns.histplot(x='Percent_mortality', data=df, bins=15)
+
+plt.xlabel('Number of casualties')
+plt.xlim([0, 1.0])
+
+plt.savefig('mortality.pdf', bbox_inches='tight')
+plt.close()
+```
