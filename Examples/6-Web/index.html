@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    
+    
+    <head>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                font-size: 16pt;
+                color: #333333;
+                background-color: #FEFEFE;
+                margin: 40px auto;
+                max-width: 800px;
+            }
+            
+            input {
+                font-size: 16pt;
+            	padding: .25em .5em .25em .5em;
+            	background-color: #FCFCFC;   
+            }
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <h1>Baby Name Popularity Tracker</h1>
+        
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+        </figure>
+        
+        <label for="nameInputBox">Enter a name</label> <br>
+        <input type="text" id="nameInputBox">
+
+        <br><br>
+        
+        
+        <input type="radio" id="female" name="sex" value="F" checked>
+        <label for="female">Female</label><br>
+        <input type="radio" id="male" name="sex" value="M">
+        <label for="male">Male</label><br>
+        
+        <br>
+        
+        <input type="submit" id="button" value="Submit">
+        
+        <!-- JavaScript controls the page's behavior -->
+        <script>
+        
+            //*** Submit function ***//
+            //
+            // This function runs when the user clicks the button
+            document.getElementById('button').onclick = function() {
+
+                // Use XMLHttpRequest to send an asynchronous request to the server
+                var xmlhttp = new XMLHttpRequest();
+
+                // This function runs when the server's response arrives
+                xmlhttp.onload = function() {
+                    // Parse the JSON response and extract rankings
+                    let response = JSON.parse(this.responseText);
+                    let rankings = response.data;
+                    
+                    createPlot(rankings);
+                };
+                
+                // The name typed in the box
+                let name = document.getElementById('nameInputBox').value;
+                
+                // The value of the selected radio button
+                let sex;
+                
+                if (document.getElementById('female').checked) {
+                    sex = 'F';
+                } else {
+                    sex = 'M';
+                }
+
+                // Format the URL to pass the parameters using HTTP GET
+                xmlhttp.open("GET", "/5000/submit?name=" + name + "&sex=" + sex);
+                xmlhttp.send();
+            }
+        
+        
+            //*** Create a plot from the server's response ***//
+            //
+            // Wraps around the Highcharts API
+            function createPlot(data) {
+            
+                // Convert response data into a list of objects
+                //
+                // The 'low' parameter sets the bottom of the bar so it rises
+                // from the bottom to the top of the reversed axis
+                //
+                // maxValue fixes the maximum ranking to 200 for consistently
+                // popular names
+                maxValue = Math.max(200, Math.max(...data) + 100);
+                
+                var rankings = [];
+                for (i = 0; i < data.length; i++) {
+                    rankings.push({'y': data[i], 'low': maxValue + 1});
+                }
+    
+                // Array of year values
+                years = [];
+                for (let i = 1910; i < 2020; i++) {
+                    years.push(i);
+                }
+                
+                Highcharts.chart('container', {
+                    chart: {
+                        type: 'column'
+                    },
+                    title: {
+                        text: 'Name Popularity by Year'
+                    },
+                    xAxis: {
+                        categories: years,
+                        crosshair: true,
+                        tickInterval: 5,
+                        
+                        title: {
+                            text: 'Year'
+                        }
+                    },
+                    yAxis: {
+                        min: 1,
+                        max: maxValue + 1,
+                        reversed: true,
+                        endOnTick: false,
+                        title: {
+                            text: 'Rank in year'
+                        }
+                    },
+                    plotOptions: {
+                        column: {
+                            groupPadding: 0.0,
+                            pointPadding: 0.0,
+                            borderWidth: 0.1
+                        },
+                        threshold: maxValue + 1
+                    },
+                    series: [{
+                        name: 'Relative popularity',
+                        data: rankings,
+                        showInLegend: false
+                    }],
+                });
+            }
+            
+        </script>
+        
+        
+        <!-- Highcharts for histograms -->
+    	<script src="https://code.highcharts.com/highcharts.js"></script>
+
+        
+    </body>
+    
+    
+</html>
