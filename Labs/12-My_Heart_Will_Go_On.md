@@ -283,7 +283,7 @@ plt.close()
 
 The diagonals of the matrix correspond to correct classifications. The other cells correspond to misclassified pairs. Each cell shows the **count** of items that fell into each category.
 
-**Question**: What are the three two misclassified digit pairs?
+**Question**: What are the two most-frequently misclassified digit pairs?
 
 
 ## Random Forests
