@@ -272,7 +272,7 @@ MNIST is built into scikit-learn. The first lines load the data set, then reshap
 
 Accuracy, of course, is a single measurement, but the MNIST problem has **ten classes**, one for each digit 0-9. It would be interesting to learn which digits are at greater risk of being misclassified. For example, it seems more likely that 1 and 7 could be confused for each other than 1 and 0.
 
-Add the following code to generate a **confusion matrix**. Download and open the matrix, then**copy it into your lab document**.
+Add the following code to generate a **confusion matrix**. Download and open the matrix, then **copy it into your lab document**.
 
 ```
 plot_confusion_matrix(clf, X_test, y_test)
