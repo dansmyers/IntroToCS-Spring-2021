@@ -130,7 +130,7 @@ Start by looking at the root node.
 
 - The second line of the node says `gini = `. This is the GINI coefficient, a measure of the "impurity" of the node. You may have heard of the GINI coefficient before, because it's widely used in economics as a measurement of inequality. Interpreting the score is kind of difficult (it's an abstract nonlinear measurement), but in our case, GINI scores close to 0 are **good**, because they indicate a node that is composed mostly of one class. Higher GINI scores correspond to **greater impurity**, which indicates nodes that should be further subdivided. In general, the decision tree algorithm works by looking for splits that lead the "pure" nodes, as measured by maximizing the change in GINI coefficient.
 
-- The top line of the node indicates the test used to divide the entire group into two subgroups. Here, the top-level test is `Sex_binary < .5`. Recall that `Sex_binary` is 0/1 variable where 0 indicates female and 1 indicates male. Therefore, the top-level split in the tree is separating the passengers into a women (in the left branch) and men (in the right branch).
+- The top line of the node indicates the test used to divide the entire group into two subgroups. Here, the top-level test is `Sex_numeric < .5`. Recall that `Sex_numeric` is 0/1 variable where 0 indicates female and 1 indicates male. Therefore, the top-level split in the tree is separating the passengers into a women (in the left branch) and men (in the right branch).
 
 The node on the left corresponds to all women, which make up 35.4% of the data set.
 
