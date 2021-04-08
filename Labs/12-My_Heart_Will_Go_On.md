@@ -301,7 +301,7 @@ For your last part, watch the first ~15 minutes of this video on the application
 
 https://www.youtube.com/watch?v=aircAruvnKk&vl=en
 
-**Question**: Summarize the author's argument for why a multi-layer neural network is well-suited to the digit classification problem? What is each layer in the model doing?
+~**Question**: Summarize the author's argument for why a multi-layer neural network is well-suited to the digit classification problem? What is each layer in the model doing?~
 
 
 ## Submission
