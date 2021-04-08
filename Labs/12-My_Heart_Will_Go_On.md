@@ -294,6 +294,16 @@ A random forest, as the name implies, is a classificaiton model bulit from a **c
 
 **Question**: What is the impact of random forest classifier on prediction accuracy? Does it lead to any significant changes in the misclassified pairs in the confusion matrix?
 
+
+## Neural Networks
+
+For your last part, watch the first ~15 minutes of this video on the application of neural networks to the digit classification problem (you can stop watching when you get to the part with a lot of math):
+
+https://www.youtube.com/watch?v=aircAruvnKk&vl=en
+
+**Question**: Summarize the author's argument for why a multi-layer neural network is well-suited to the digit classification problem? What is each layer in the model doing?
+
+
 ## Submission
 
 Submit your document containing the answers to the questions and the plots to Canvas.
