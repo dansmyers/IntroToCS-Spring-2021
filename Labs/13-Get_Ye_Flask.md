@@ -230,12 +230,22 @@ Believe it or not, we now have all of the pieces in place we need to write the c
 
 ### Data
 
-The file `babynames.csv` is posted to Canvas. Download it, then upload to Mimir. Create a `data` directory and move the file to it:
+~The file `babynames.csv` is posted to Canvas. Download it, then upload to Mimir. Create a `data` directory and move the file to it~:
+
+**Working version!**
+
+Use the `curl` program to yank if off my GitHub repo. The argument `-O` (dash capital Oh) tells curl to retrieve a file from a remote URL and save it to the current directory.
+
+```
+curl -O https://raw.githubusercontent.com/dansmyers/Baby-Name-Popularity/main/data/babynames.csv
+```
+
+After that, move it to the data directory.
 
 ```
 mkdir data
 
-mv ~/babynames.csv data
+mv babynames.csv data
 ```
 
 ### Client-Side
