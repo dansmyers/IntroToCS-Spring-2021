@@ -228,6 +228,16 @@ Experiment with changing the message returned by the server. **You must stop and
 
 Believe it or not, we now have all of the pieces in place we need to write the complete baby name popularity program.
 
+### Data
+
+The file `babynames.csv` is posted to Canvas. Download it, then upload to Mimir. Create a `data` directory and move the file to it:
+
+```
+mkdir data
+
+mv ~/babynames.csv data
+```
+
 ### Client-Side
 
 Here is the complete `index.html` page. It's longer that the last example, but most of the extra length is in a big structure of options that are used by the Highcharts API to generate the plot. The important part of the app is almost exactly the same as the simple hello example: There are some inputs, a script the reads the values of the inputs, and then a request that goes to a server URL passing along the input values as parameters.
