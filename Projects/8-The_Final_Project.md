@@ -81,7 +81,7 @@ Look up some ancient techniques for things like multiplication, division, square
 
 ### Data Projects
 
-If you would prefer to answer a data question, you can find a data set, load it into Pandas, and produce a graph answering your question. Take a look at [this challenge project from the DTA class](https://github.com/dansmyers/DataScienceAndAnalytics/blob/master/Challenge-Projects/1-Make_a_Graph.md) for some tips. If you take this approhach, you don't have to write a "report," but do provide a summary of the question, your data source, and an interpretation of the plot that answers the question.
+If you would prefer to answer a data question, you can find a data set, load it into Pandas, and produce a graph answering your question. Take a look at [this challenge project from the DTA class](https://github.com/dansmyers/DataScienceAndAnalytics/blob/master/Challenge-Projects/1-Make_a_Graph.md) for some tips. If you take this approach, you don't have to write a "report," but do provide a summary of the question, your data source, and an interpretation of the plot that answers the question.
 
 ### Hangman
 
