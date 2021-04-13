@@ -2,8 +2,6 @@
 
 ## Due Friday, April 30 (the day of our scheduled final exam)
 
-## You can work with allies to complete your project. If you work with others, include their names in your project submission.
-
 ## Description
 
 This is it, the final project.
@@ -12,23 +10,24 @@ This is it, the final project.
 
 Most of you will probably want to make some sort of game, but note that isn't required. You can make a text-based program, or a program that's more calculation-oriented if that's what you want.
 
+## Groups
+
+**If you choose**, you may work in a group of up to three people to complete your project. If you do choose to work with others,
+
+- Each member of the group should still make an individual project submission to Canvas so I have a record of what was turned in.
+- Include the names of your team members in your project as part of your top-level docstring comment.
+- You may write code collaboratively with other members of your group, but remember to pay attention to the guidelines below on acceptable use of resources.
+- It's not required. but if you're working in a group it would cool to undertake a more ambitious project using Flask and HTML.
+
 ## Requirements
 
 1. Awesomeness.
 
-2. Uses basic features of Python: variables, loops, conditional
-   statements and functions. Almost any reasonably complex program is
-   going to satisfy these requirements. If your program doesn't
-   include most of these features then it might be too simple.
+2. Uses basic features of Python: variables, loops, conditional statements, and functions. Almost any reasonably complex program is going to satisfy these requirements. If your program doesn't include most of these features then it might be too simple. **You must include at least one instance of each of these features**.
    
-3. Uses at least one advanced data organization feature: a list,
-   classes, or a dictionary. I'm not requiring any
-   particular number of these, because the best choice depends on
-   the nature of your program.
+3. Uses at least one advanced data organization feature: a list, a class, or a dictionary. I'm not requiring any particular number of these, because the best choice depends on the nature of your program.
    
-4. Demonstrates good programming style (indentation, variable names)
-   and includes descriptive comments explaining what's happening
-   in the program.
+4. Demonstrates good programming style (indentation, variable names) and includes descriptive comments explaining what's happening in the program.
    
    
 ## Grading
@@ -36,105 +35,63 @@ Most of you will probably want to make some sort of game, but note that isn't re
 Submit your Python code, including a brief description of the program in its docstring, to
 Canvas. I'll run your program and look at the source code. I'll be checking:
 
-1. Does it work? Even if it's simple, I want to see something that
-   could be considered a complete working program, not an incomplete
-   fragment.
+1. Does it work? I want to see something that could be considered a complete working program, not an incomplete fragment. It's better to turn in a complete, working program that you know could be improved than an ambitious but unfinished one.
 
-2. Does it use the features of Python that we've discussed?
+2. Does it use the features of Python that we've discussed? Follow the guidelines given above.
 
 3. Does it follow good coding style, as we've used in class and in
   labs?
 
-I'll mark each one of these three areas on a four point scale:
+## Acceptable Use of Resources
 
-- 0 (not functional): doesn't run, uses no features, impossible to understand
-    
-- 1 (needs improvement): a working program with minimal functionality
-         code is not clean, but is legible
- 
-- 2 (satisfactory): a complete working program that meets its stated goals
-         code is well-formatted and has some comments
-    
-- 3 (excellence): a program that is both complete and demonstrates creativity
-         incorporates one or more unique features
-         code is well-formatted and has excellent documentation
+It is acceptable to use the Internet to get ideas and figure out how to implement features you need for your projects. However, **the work you submit must be your own original creation**, or in the case of a group collaboration, your group's original creation. Copying another program and presenting it as your own is unacceptable and will result in automatic failure and a potential Honor Code violation.
 
-I'll add up your 0-4 point scores in each of the three areas 
-(completeness, use of Python, code style). You need to achieve
-at least **six out of nine** points to earn satisfactory credit for
-the entire project. Five or fewer points will result in an 
-unsatisfactory grade.
-
+**It is acceptable** to research solutions to programming problems and incorporate them into your code. For example, if you need to convert a string to a list, you could look up how to to do that and then use the solution you find. That's an acceptable use of documentation. You **don't** need to provide citations for basic language features or solutions like these.
 
 ## Tips
 
 - **Start early**! Don't wait until the last minute!
 
-- Start with the simplest idea that could work, get it to work, then
-build up from there. It's better to have a complete program that does
-what it's supposed to do than an ambitious but incomplete idea.
+- Start with the simplest idea that could work, get it to work, then build up from there. It's better to have a complete program that does
+what it's supposed to do than an ambitious but incomplete idea. Develop incrementally and test as you go!
 
-- Use the examples from our previous labs. They illustrate many different examples that could be useful
-for your own programs.
+- Use our previous examples. They illustrate many different concepts that could be useful for your own programs.
 
 ## Ideas
 
-### Interactive Fiction
+### Web-Based Story
 
-Build a more complex interactive fiction game like the one we did in our lab early in the semester. Use functions to code each
-page of the game.
+Write a Flask program with a set of HTML pages, each one representing a page in a story. The user can click a button on the page to advance to the next part of the story. The Flask server has a route for each page that returns the next page in the story.
 
-You can use variables to keep track of information about the world or the player's actions. Even better: use a dictionary to keep track 
-of state information for the game.
+If you want to be fancy (which you definitely do), you could incorporate choices. Give the user a couple of buttons to click. Each button has an associated JavaScript function that contacts the server to retrieve the next page for that choice. This would require you to write a little bit of front-end code, but can be done by copying and modifying examples that you already have. It doesn't require writing any original JavaScript.
 
-```
-def example_page(state):
-    """
-    state is a dictionary that keeps track of information about the world or the player.
-    """
-    
-    print("You see a key nearby.")
-    print("1. Take the key.")
-    print("2. Give up and go home.")
-    choice = input("What shallst thou deaux?")
-    
-    # If the user chooses, set a variable in the state dictionary
-    if choice == 1:
-        state['has_key'] = True
-        
-    # Call another function to move to the next page
-    next_page()
-```
+### Web-Based Quiz
 
-Later, you can check if `state['has_key']` is `True` to determine if the player has the ability to unlock a chest or door.
+Prompt the user to answer a few question (look at the radio buttons from the baby names app), then send the responses to a `/submit` route on the server. The server has code to read the responses and do some decision-making before returning a response page from the `static` HTML directory.
 
-You would probably want an initialization function that sets up and returns the initial dictionary with default values
-for every variable you intend to track in the game.
+This requires a little bit of front-end work to put the page together, but it can all be done by copying and modifying the baby names example.
 
-### Card Games
+### Digits of π
 
-Use the object-oriented deck of cards to build a game. War is relatively easy and Blackjack is also a good choice. Poker is hard because
-of the complexity of identifying and scoring the hands, so I don't recommend trying it unless you want an extra challenge.
+Do some research to learn how to write a program that can calculate the digits of π. Write your own Python implementation.
 
-### Nim
+### Ancient Algorithms
 
-You might remember the Thai 21 game from one of our labs.
+Look up some ancient techniques for things like multiplication, division, square roots, and other math operations. Write a library of your own implementations.
 
-- Start with a pile of 21 stones.
-- On her turn, a player may take 1, 2, or 3 stones from the pile.
-- The player who takes the last stone is the winner.
+### Data Projects
 
-Nim is a generalization of this game. There are variants, but here's a standard setup:
+If you would prefer to answer a data question, you can find a data set, load it into Pandas, and produce a graph answering your question. Take a look at [this challenge project from the DTA class](https://github.com/dansmyers/DataScienceAndAnalytics/blob/master/Challenge-Projects/1-Make_a_Graph.md) for some tips. If you take this approhach, you don't have to write a "report," but do provide a summary of the question, your data source, and an interpretation of the plot that answers the question.
 
-- Start with three piles of 20 stones each.
-- A player may remove any number of stones on his turn, but from only one pile.
-- The player who takes the last stone **loses**.
+### Hangman
+
+Classic word game. There are lots of different ways to implement it. Make sure that you're choosing the word from a random pool.
+
+There are many versions of this and other traditional pen and paper games floating around on the Internet. **Do not submit someone else's code as you own**. Trust me: I will know. **I always know**.
 
 ### Pig
 
-A classic game played with one die. The object is to be the first player to accumulate 100 total points.
-
-On your turn, roll the die.
+A classic game played with one die. The object is to be the first player to accumulate 100 total points. On your turn, roll the die.
 
 - If you roll a 1, your turn ends immediately and you earn no points.
 
