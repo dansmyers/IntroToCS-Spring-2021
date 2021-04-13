@@ -5,6 +5,7 @@
 Suppose you want to deploy your finished baby name popularity tracker to the web so it can be publicly accessible? You have a few options:
 
 - You could buy your own computer to use as a server, set it up to run your application and serve pages, connect it to the Internet, and configure a domain name to point to it.
+- 
 - You could **rent** infrastructure from a cloud provider, like Amazon's EC2. These services allow you to deploy apps that run on **another company's** infrastructure so you don't have to undertake the overhead of mainintaing and configuring your own hardware. There is still, however, nontrivial complexity involved in getting cloud infrastructure up and running.
 
 Heroku is a "platform as a service" (PaaS) that provides a simplified interface to deploy applications to Amazon EC2. Briefly, as a developer, you can write your code and then push it to Heroku's servers, which handle all of the back-end work to deploy your app on Amazon's cloud platform and make it publicly accessible. **This is very cool**.
@@ -33,7 +34,7 @@ heroku login -i
 
 ## Version Control and Git
 
-There are multiple ways to deploy a Heroku application. We're going to take advantage of the fact that the search engine is already in a Git repo and use Heroku's support for Git-based deployment.
+There are multiple ways to deploy a Heroku application. We're going to take advantage of Heroku's support for Git, the most popular **version control system** that developers can use to keep track of their code.
 
 Before proceeding, read the following articles.
 
@@ -44,7 +45,7 @@ Now answer these questions about Git and version control systems.
 
 - What are three primary benefits of version control systems in general?
 - Name at least two other version control sytsems besides Git.
-- What does it mean to say that Git is a "distributed version control system?" How is that different from a non-distibuted system?
+- What does it mean to say that Git is a "distributed version control system?" How is that different from a non-distributed system?
 - What is a Git repository?
 - Give general definitions of the terms "commit" and "merge" as they apply to Git.
 
@@ -55,10 +56,16 @@ Now answer these questions about Git and version control systems.
 You can now `cd` into your project directory.
 
 ```
-cd cms167-f19-java-spring-boot
+cd CMS_120/Flask
 ```
 
-Recall that we created this directory by cloning it from a Git repository hosted on GitHub. You can verify that this directory is a Git repo by looking for a special `.git` subdirectory. Names that start with `.` are considered "hidden" by the Linux shell, which only means that they don't show up in the output of a regular `ls` command. To view "hidden" files and directories use
+The first that you need to do is make your project repo into a Git repository.
+
+```
+git init
+```
+
+This command will create a special `.git` repository inside `Flask`. Names starting with `.` are considered "hidden" by the shell, which means they don't show up in the output of a regular `ls` command. To view "hidden" files and folders use
 
 ```
 ls -a
@@ -66,9 +73,44 @@ ls -a
 
 **Question**: Do some research to discover the purpose of the `.git` folder. What does it contain, in general terms?
 
+### Setup the project for Heroku
+
+Heroku is pretty slick and will automatically build and deploy your application on the Internet. However, it needs two additional pieces of information to build Python projects.
+
+- A file named `Procfile` that informs Heroku of the name of your application. In our case, this is `app.py`.
+- A file called `requirements.txt` that specifies which versions of the required packages to load. This file exists to ensure that Heroku can create your app with the correct versions of all the dependencies it needs and not accidentally break something by loading the wrong version.
+
+Create a file named `Procfile` in your `Flask` directory (just `Procfile`, no extension). Put the following line in it:
+
+```
+web: gunicorn app:app
+```
+
+The line tells Heroku to use a web server program called `gunicorn` (which is short for "Green Unicorn" and not, like, a unicorn with a gun for a horn) to run `app.py`.
+
+Next, create `requirements.txt` and give it the following lines:
+
+```
+click==7.1.2
+Flask==1.1.2
+gunicorn==20.0.4
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+numpy==1.19.5
+pandas==1.1.5
+python-dateutil==2.8.1
+pytz==2021.1
+six==1.15.0
+Werkzeug==1.0.1
+```
+
+Each line defines a package that's used by the Flask framework, plus `pandas`, `numpy` and a few other packages that the program requires. Make sure you have both files saved in the `Flask` directory.
+
+
 ### Heroku project
 
-Create a new Heroku project.
+We are now ready to push the application to Heroku. Create a new Heroku project.
 
 ```
 heroku create
@@ -78,7 +120,7 @@ This command will assign you a new project URL on Heroku's domain. It will also 
 
 ### Commit and push
 
-Git, like all version control systems, exists to track changes to projects. However, **Git does not automatically track every change you make to a file in the repo**. Instead, you must manually **commit** your changes to make Git record them. Therefore, all of the changes you have made since you downloaded the initial `cms167-f19-java-spring-boot` directory must be committed before you can send the complete app to Heroku.
+Git, like all version control systems, exists to track changes to projects. However, **Git does not automatically track every change you make to a file in the repo**. Instead, you must manually **commit** your changes to make Git record them. Recall that you created a new empty Git repo with `git init` in an earlier step. You must now commit all of your files to the repository.
 
 To commit, you must first **stage** the new and updated files. Use the following command to stage all changes made within the repo:
 
@@ -92,7 +134,7 @@ You can view the list of staged changes with
 git status
 ```
 
-Commit the changes to the local repository. The `-m` flag specifies a message describing the nature and purpose of the commit and is required.
+Use the `commit` command to commit the changes to the local repository. The `-m` flag specifies a message describing the nature and purpose of the commit and is required.
 
 ```
 git commit -m "Search engine app"
@@ -106,7 +148,9 @@ To deploy, **push** the contents of your Git repo on Mimir to the remote Git rep
 git push heroku master
 ```
 
-You should see a ot of output indicating that Heroku is building the project. If your project compiled with `./mvnw` then the build should succeed. If it does fail, examine the output to learn what caused the error. When the build finishes, your completed app will be running at the Heroku URL. Check it out and verify that it works!
+You should see a ot of output indicating that Heroku is building the project. This will **probably** work. If it does fail, look carefully at the output for an explanation of why the build failed. The most likely reason for a failure is a package in `requirements.txt` listed with a version that Heroku can't support. If that does happen, Heroku will print out a list of acceptable versions for the problematic package. Update `requirements.txt` to use a version of the package that Heroku supports, then repeat the `git` commands to `add`, `commit`, and `push` your work.
+
+When you're done, you can go to the URL give to your be Heroku create and see your project!
 
 ### Making further changes
 
