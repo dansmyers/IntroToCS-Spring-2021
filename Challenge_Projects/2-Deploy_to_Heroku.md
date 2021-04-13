@@ -2,13 +2,15 @@
 
 ## Description
 
-Suppose you want to deploy your finished baby name popularity tracker to the web so it can be publicly accessible? You have a few options:
+Suppose you want to deploy your finished baby name popularity tracker to the web so it can be publicly accessible. You have a few options:
 
 - You could buy your own computer to use as a server, set it up to run your application and serve pages, connect it to the Internet, and configure a domain name to point to it.
 - 
-- You could **rent** infrastructure from a cloud provider, like Amazon's EC2. These services allow you to deploy apps that run on **another company's** infrastructure so you don't have to undertake the overhead of mainintaing and configuring your own hardware. There is still, however, nontrivial complexity involved in getting cloud infrastructure up and running.
+- You could **rent** infrastructure from a cloud provider, like Amazon Web Services (AWS). These services allow you to deploy apps that run on **another company's** infrastructure so you don't have to undertake the overhead of mainintaing and configuring your own hardware.  A large number of companies, particularly early stage startups, use AWS or other cloud providers for all of their server needs. There is still, however, nontrivial complexity involved in getting cloud infrastructure up and running.
 
-Heroku is a "platform as a service" (PaaS) that provides a simplified interface to deploy applications to Amazon EC2. Briefly, as a developer, you can write your code and then push it to Heroku's servers, which handle all of the back-end work to deploy your app on Amazon's cloud platform and make it publicly accessible. **This is very cool**.
+Most tech companies have a dedicated "Development Operations" (**DevOps**) staff that has the responsibility of managing the company's testing and deployment infrastructure, whether those resources are located in the company's own datacenter or rented from a cloud provider.
+
+Heroku is a "platform as a service" (PaaS) that provides a simplified interface to deploy applications to Amazon EC2. Briefly, as a developer, you can write your code and then push it to Heroku's servers, which handle all of the back-end work to deploy your app on Amazon's cloud platform and make it publicly accessible. **This is very cool**. Heroku's value proposition is to free software developers to focus on creating code that solves problems and achieves business goals, rather than managing the infrastructure required to deploy and run their apps.
 
 In this project, you're going to take your baby names app and deploy it to Heroku. This doesn't require any additional coding, but will allow you to get additional practice with the command line and git. At the end, you'll have a working web app tied to a URL that you can share with anyone interested in your work.
 
