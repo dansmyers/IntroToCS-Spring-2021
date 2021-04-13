@@ -6,9 +6,7 @@
 
 This is it, the final project.
 
-**Make anything you want**, as long as it's awesome and uses the Python features that we've learned over the course of the semester.
-
-Most of you will probably want to make some sort of game, but note that isn't required. You can make a text-based program, or a program that's more calculation-oriented if that's what you want.
+**Make anything you want**, as long as it's awesome and uses the Python features that we've learned over the course of the semester. Most of you will probably want to make some sort of game, but note that isn't required. I have some ideas for you at the end of the document.
 
 ## Groups
 
