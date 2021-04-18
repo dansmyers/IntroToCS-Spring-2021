@@ -67,13 +67,31 @@ The first that you need to do is make your project repo into a Git repository.
 git init
 ```
 
-This command will create a special `.git` repository inside `Flask`. Names starting with `.` are considered "hidden" by the shell, which means they don't show up in the output of a regular `ls` command. To view "hidden" files and folders use
+**E-mails and Names**. The first time you run `git`, it will probably print a message asking you to configure an e-mail address and name. This is not an error! Git wants to have an identity associated with each user so that other users of a team project would be able to contact you with questions about your commits. In this case, you don't have collaborators, so you can put anything you want for the e-mail address and name &ndash; they don't have to be your real information. **Run the config commands before continuing**.
+
+This `init` command will create a special `.git` repository inside `Flask`. Names starting with `.` are considered "hidden" by the shell, which means they don't show up in the output of a regular `ls` command. To view "hidden" files and folders use
 
 ```
 ls -a
 ```
 
 **Question**: Do some research to discover the purpose of the `.git` folder. What does it contain, in general terms?
+
+### Edit `index.html`
+
+You need to make one small change to `index.html` for your project to work on Heroku. Open the file and look for the `<script>` block towards the bottom. Find this line, which sets the server URL that the page should contact to submit the name request:
+
+```
+xmlhttp.open("GET", "/5000/submit?name=" + name + "&sex=" + sex);
+```
+
+Change the URL path to remove `/5000`:
+
+```
+xmlhttp.open("GET", "/submit?name=" + name + "&sex=" + sex);
+```
+
+Recall that the Flask webserver ran on port 5000. Mimir implements routing to higher-numbered ports through the URL, which is why we included 5000 in the URL for the version of the program we developed on Mimir. Heroku will run your app with a production webserver on port 80 &ndash; the standard port for HTTP &ndash; so `5000` isn't required.
 
 ### Setup the project for Heroku
 
