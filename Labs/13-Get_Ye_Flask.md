@@ -198,7 +198,7 @@ https://www.google.com/search?q=pointy+guitars
 
 Followed by a **lot** of other options that specify stuff about your browser, location, etc.
 
-- `/search` is the Google endpoint to initiate a search request. When you send a request here, Google's back-end infrastructure kicks in to process the search and return the results page.
+- `/search` is the Google endpoint to initiate a search request. When you send a request to that URL endpoint, Google's back-end infrastructure kicks in to process the search and return the results page.
 
 - `q=` is the search query term. In the case, it's actually two words joined together by a `+` symbol.
 
