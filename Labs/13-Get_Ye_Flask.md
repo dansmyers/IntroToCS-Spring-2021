@@ -57,7 +57,7 @@ Add one more practice route to your app that returns a message and verify that y
 
 The app above returns a static message when the user first loads the page. Let's improve that by returning a real HTML page.
 
-Start by creating the page. **Static pages must go in a special directory called `static`.
+Start by creating the page. **Static pages must go in a special directory called `static`**.
 
 ```
 mkdir static
@@ -167,11 +167,13 @@ Update `index.html` to the following:
 
 Take a look at the code for a moment. It's more complicated than our previous pages, but you can identify a few elements:
 
-- The tags that define an input textbox and the submit button.
+- There are two tags that define an input textbox and the submit button.
 
 - The `<div>` tag creates a "division" of the page. It doesn't do anything by itself, but can be used to identify a region of the page that might be manipulated by JavaScript code later. In our case, the `<div>` section will hold the server's response.
 
 - The JavaScript code is in a `<script>` block.
+
+- `document.getElementById` retrieves a reference to the button element, then assigns a JavaScript function to run when the user clicks the button.
 
 - The script uses a built-in feature called `XmlHttpRequest` to send a request to the server.
 
@@ -183,10 +185,12 @@ oReq.open("GET", "/5000/hello?name=" + input);
 
 The line specifies that the client's request should go to the `/hello` route on the server. As we have already seen, that's going to invoke a little bit of code associated with the `hello` route.
 
+## Parameter Passing
+
 What's up with the `?name=` part? Here's a second key concept: **One way to pass information from a client to a server is to embed that information in the request URL**. The request parameters are passed after a `?` character and each parameter is identified by its name.
 
 
-You can see this behavior. Go to google.com and perform a search, then look at the URL that's generated. You'll probably see something like:
+You can see this behavior on other sites. Go to google.com and perform a search, then look at the URL that's generated. You'll probably see something like:
 
 ```
 https://www.google.com/search?q=pointy+guitars
