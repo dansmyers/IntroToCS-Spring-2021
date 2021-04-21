@@ -200,11 +200,24 @@ Followed by a **lot** of other options that specify stuff about your browser, lo
 
 - `/search` is the Google endpoint to initiate a search request. When you send a request to that URL endpoint, Google's back-end infrastructure kicks in to process the search and return the results page.
 
-- `q=` is the search query term. In the case, it's actually two words joined together by a `+` symbol.
+- `q=` is the search query term. Multiple words can be joined together with `+`.
 
 Take a moment and try manually constructing some Google queries by directly entering the search URL with a `q` parameter.
 
-In our example, the parameter we're passing is called `name` and it has the value that the user typed in the input box, which was read out at the beginning of the script.
+Our application takes on parameter, `name`, which is intended to be the name of the user. The first line of the script reads the value of `name` from the input box using `document.getElementById`. The `oReq.open` line passes this value to the server by concatenating it into the request URL:
+
+```
+oReq.open("GET", "/5000/hello?name=" + input);
+```
+
+For example, if the user inputs `Ian` as the name, the full request URL would be
+
+```
+/5000/hello?name=Ian
+```
+
+This version of the program doesn't support multi-word names, but we could allow them by simply replacing any whitespace in the name string with `+` characters.
+
 
 ## Server-Side
 
