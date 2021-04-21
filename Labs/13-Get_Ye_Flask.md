@@ -210,10 +210,10 @@ Our application takes on parameter, `name`, which is intended to be the name of 
 oReq.open("GET", "/5000/hello?name=" + input);
 ```
 
-For example, if the user inputs `Ian` as the name, the full request URL would be
+For example, if the user inputs `Coco` as the name, the full request URL would be
 
 ```
-/5000/hello?name=Ian
+/5000/hello?name=Coco
 ```
 
 This version of the program doesn't support multi-word names, but we could allow them by simply replacing any whitespace in the name string with `+` characters.
