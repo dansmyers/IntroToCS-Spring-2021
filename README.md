@@ -142,7 +142,7 @@ We'll have five kinds of assignments in this class:
 
 1. A set of **seven autograded programming assignments**. These will be done on the Mimir platform, and you'll have one due approximately every two weeks. Each assignment consists of questions that will require you to write short Python programs, accompanied by tests that automatically evaluate your code.
 
-2. **Six short quizzes** that will be taken **in class** on the days specified on the calendar.
+2. **~Six~ Four short quizzes** that will be taken **in class** on the days specified on the calendar.
 
 3. A set of **six required labs** that will be done in class on the days specified on the calendar. These labs emphasize data collection and scientific reasoning and are required for this class to count for the RFLA Science requirement. The other lab periods will be used for extra practice and working on the problem sets.
 
