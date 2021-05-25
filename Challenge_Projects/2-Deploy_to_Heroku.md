@@ -67,8 +67,6 @@ The first that you need to do is make your project repo into a Git repository.
 git init
 ```
 
-**E-mails and Names**. The first time you run `git`, it will probably print a message asking you to configure an e-mail address and name. This is not an error! Git wants to have an identity associated with each user so that other users of a team project would be able to contact you with questions about your commits. In this case, you don't have collaborators, so you can put anything you want for the e-mail address and name &ndash; they don't have to be your real information. **Run the config commands before continuing**.
-
 This `init` command will create a special `.git` repository inside `Flask`. Names starting with `.` are considered "hidden" by the shell, which means they don't show up in the output of a regular `ls` command. To view "hidden" files and folders use
 
 ```
@@ -147,6 +145,8 @@ To commit, you must first **stage** the new and updated files. Use the following
 ```
 git add .
 ```
+
+**E-mails and Names**. The first time you run `git`, it will probably print a message asking you to configure an e-mail address and name. This is not an error! Git wants to have an identity associated with each user so that other users of a team project would be able to contact you with questions about your commits. In this case, you don't have collaborators, so you can put anything you want for the e-mail address and name &ndash; they don't have to be your real information. **Run the config commands before continuing**.
 
 You can view the list of staged changes with 
 
