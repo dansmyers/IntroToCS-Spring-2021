@@ -5,7 +5,7 @@
 Suppose you want to deploy your finished baby name popularity tracker to the web so it can be publicly accessible. You have a few options:
 
 - You could buy your own computer to use as a server, set it up to run your application and serve pages, connect it to the Internet, and configure a domain name to point to it.
-- 
+
 - You could **rent** infrastructure from a cloud provider, like Amazon Web Services (AWS). These services allow you to deploy apps that run on **another company's** infrastructure so you don't have to undertake the overhead of mainintaing and configuring your own hardware.  A large number of companies, particularly early stage startups, use AWS or other cloud providers for all of their server needs. There is still, however, nontrivial complexity involved in getting cloud infrastructure up and running.
 
 Most tech companies have a dedicated "Development Operations" (**DevOps**) staff that has the responsibility of managing the company's testing and deployment infrastructure, whether those resources are located in the company's own datacenter or rented from a cloud provider.
